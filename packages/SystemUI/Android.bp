@@ -574,6 +574,7 @@ android_library {
         "SurfaceEffectsComposeLib",
         "uilatencystats_flags_core_java_lib",
         "personalcontext_ace_visualizer",
+        "tensorflowlite_java",
     ],
     enable_ksp: true,
     annotation_processor_flags: [
@@ -1093,7 +1094,14 @@ android_app {
     static_libs: [
         "SystemUI-application",
     ],
+    jni_libs: ["libtensorflowlite_jni"],
+    use_embedded_native_libs: true,
     resource_dirs: [],
+    asset_dirs: ["assets"],
+    aaptflags: [
+        "-0 .tflite",
+        "-0 .vocab",
+    ],
     enable_ksp: true,
 
     use_resource_processor: true,

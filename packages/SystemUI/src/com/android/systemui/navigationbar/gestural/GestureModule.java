@@ -16,6 +16,8 @@
 
 package com.android.systemui.navigationbar.gestural;
 
+import com.google.android.systemui.gesture.BackGestureTfClassifierProviderGoogle;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -27,6 +29,6 @@ public interface GestureModule {
     /** */
     @Provides
     static BackGestureTfClassifierProvider providsBackGestureTfClassifierProvider() {
-        return new BackGestureTfClassifierProvider();
+        return new BackGestureTfClassifierProviderGoogle();
     }
 }
