@@ -45,10 +45,10 @@
     <integer name="navigation_bar_deadzone_orientation">0</integer>
 
     <!-- Whether or not lockscreen shortcuts can be customized -->
-    <bool name="custom_lockscreen_shortcuts_enabled">false</bool>
+    <bool name="custom_lockscreen_shortcuts_enabled">true</bool>
 
     <!-- Whether or not long-pressing on keyguard will display to customize lockscreen -->
-    <bool name="long_press_keyguard_customize_lockscreen_enabled">false</bool>
+    <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
 
     <bool name="config_dead_zone_flash">false</bool>
 
@@ -137,6 +137,8 @@
          Already contains tool that handles intent: "com.android.settings.action.live_caption" by
          default. You can add up to 2 additional related tools. -->
     <string-array name="config_quickSettingsHearingDevicesRelatedToolName" translatable="false">
+        <item>com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.MainActivity</item>
+        <item>com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.dolphin.ui.visualizer.TimelineActivity</item>
     </string-array>
 
     <!-- Hearing devices related tool icon list. Provide drawable resource names in the same order
@@ -555,7 +557,7 @@
     </string-array>
 
     <!-- Launcher package name for overlaying icons. -->
-    <string name="launcher_overlayable_package" translatable="false">com.android.launcher3</string>
+    <string name="launcher_overlayable_package" translatable="false">com.google.android.apps.nexuslauncher</string>
 
     <!-- ThemePicker package name for overlaying icons. -->
     <string name="themepicker_overlayable_package" translatable="false">com.android.wallpaper</string>
@@ -669,7 +671,7 @@
     <string translatable="false" name="config_batteryStateUnknownUrl"></string>
 
     <!-- Package name of the preferred system app to perform eSOS action -->
-    <string name="config_preferredEmergencySosPackage" translatable="false"></string>
+    <string name="config_preferredEmergencySosPackage" translatable="false">com.google.android.apps.safetyhub</string>
 
     <!-- Whether to show the side fps hint while on bouncer -->
     <bool name="config_show_sidefps_hint_on_bouncer">true</bool>
@@ -1001,7 +1003,7 @@
 
     <!-- Package name for the app that implements the wallpaper picker. -->
     <string name="config_wallpaperPickerPackage" translatable="false">
-        com.android.wallpaper
+        com.google.android.apps.wallpaper
     </string>
 
     <!-- Whether the floating rotation button should be on the left/right in the device's natural
@@ -1077,7 +1079,9 @@
     <item name="shortcut_helper_screen_width_fraction" format="float" type="dimen">1.0</item>
 
     <!-- List of packages for which we want to use activity info (instead of application info) for biometric prompt logo. Empty for AOSP. [DO NOT TRANSLATE] -->
-    <string-array name="config_useActivityLogoForBiometricPrompt" translatable="false"/>
+    <string-array name="config_useActivityLogoForBiometricPrompt" translatable="false">
+        <item>com.google.android.gms</item>
+    </string-array>
 
     <!--
     Whether to use the desktop screen size in screenshot test.
@@ -1132,7 +1136,7 @@
 
     <!-- Configuration for wallpaper focal area -->
     <bool name="center_align_focal_area_shape">false</bool>
-    <string name="focal_area_target" translatable="false" />
+    <string name="focal_area_target" translatable="false">com.google.android.apps.magicportrait.service.MagicPortraitWallpaperService</string>
 
     <!-- Configuration to swipe to open glanceable hub -->
     <bool name="config_swipeToOpenGlanceableHub">false</bool>
