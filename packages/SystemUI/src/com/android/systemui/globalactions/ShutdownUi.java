@@ -161,16 +161,10 @@ public class ShutdownUi {
     int getRebootMessage(boolean isReboot, @Nullable String reason, boolean custom) {
         if (reason != null && reason.startsWith(PowerManager.REBOOT_RECOVERY_UPDATE)) {
             return R.string.reboot_to_update_reboot;
-        } else if (reason != null && !custom && reason.equals(PowerManager.REBOOT_RECOVERY)) {
-            return com.android.systemui.res.R.string.global_action_restart_progress;
         } else if (reason != null && reason.equals(PowerManager.REBOOT_RECOVERY)) {
-            return com.android.systemui.res.R.string.global_action_restart_recovery_progress;
-        } else if (reason != null && reason.equals(PowerManager.REBOOT_BOOTLOADER)) {
-            return com.android.systemui.res.R.string.global_action_restart_bootloader_progress;
-        } else if (reason != null && reason.equals(PowerManager.REBOOT_DOWNLOAD)) {
-            return com.android.systemui.res.R.string.global_action_restart_download_progress;
+            return R.string.reboot_to_reset_message;
         } else if (isReboot) {
-            return com.android.systemui.res.R.string.global_action_restart_progress;
+            return R.string.reboot_to_reset_message;
         } else {
             return R.string.shutdown_progress;
         }
