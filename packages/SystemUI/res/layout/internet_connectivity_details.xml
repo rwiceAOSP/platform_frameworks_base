@@ -454,6 +454,7 @@
                         android:clickable="true"
                         android:paddingBottom="8dp"
                         android:paddingTop="16dp"
+                        android:fontFamily="@*android:string/config_bodyFontFamily"
                         android:textColor="@color/materialColorOnSurfaceVariant" />
                 </LinearLayout>
             </LinearLayout>
