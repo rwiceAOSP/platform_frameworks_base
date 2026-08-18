@@ -17,6 +17,7 @@
 
 package com.android.systemui.keyguard.data.quickaffordance
 
+import com.google.android.systemui.keyguard.data.quickaffordance.NowPlayingQuickAffordanceConfig
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -38,6 +39,7 @@ interface KeyguardDataQuickAffordanceModule {
             flashlight: FlashlightQuickAffordanceConfig,
             home: HomeControlsKeyguardQuickAffordanceConfig,
             mute: MuteQuickAffordanceConfig,
+            nowPlaying: NowPlayingQuickAffordanceConfig,
             quickAccessWallet: QuickAccessWalletKeyguardQuickAffordanceConfig,
             qrCodeScanner: QrCodeScannerKeyguardQuickAffordanceConfig,
         ): Set<KeyguardQuickAffordanceConfig> {
@@ -47,6 +49,7 @@ interface KeyguardDataQuickAffordanceModule {
                 flashlight,
                 home,
                 mute,
+                nowPlaying,
                 quickAccessWallet,
                 qrCodeScanner,
             )
