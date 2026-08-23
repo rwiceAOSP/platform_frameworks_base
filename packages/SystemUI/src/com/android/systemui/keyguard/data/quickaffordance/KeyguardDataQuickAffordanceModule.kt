@@ -40,7 +40,6 @@ interface KeyguardDataQuickAffordanceModule {
             mute: MuteQuickAffordanceConfig,
             quickAccessWallet: QuickAccessWalletKeyguardQuickAffordanceConfig,
             qrCodeScanner: QrCodeScannerKeyguardQuickAffordanceConfig,
-            videoCamera: VideoCameraQuickAffordanceConfig,
         ): Set<KeyguardQuickAffordanceConfig> {
             return setOf(
                 camera,
@@ -50,7 +49,6 @@ interface KeyguardDataQuickAffordanceModule {
                 mute,
                 quickAccessWallet,
                 qrCodeScanner,
-                videoCamera,
             )
         }
     }
