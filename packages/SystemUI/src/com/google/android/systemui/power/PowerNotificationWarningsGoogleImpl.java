@@ -24,8 +24,10 @@ import android.os.Looper;
 import android.util.Log;
 
 import com.android.internal.logging.UiEventLogger;
+import com.android.settingslib.fuelgauge.BatterySaverUtils;
 import com.android.settingslib.utils.ThreadUtils;
 import com.android.systemui.animation.DialogTransitionAnimator;
+import com.android.systemui.animation.Expandable;
 import com.android.systemui.broadcast.BroadcastSender;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Background;
@@ -33,6 +35,7 @@ import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.plugins.ActivityStarter;
 import com.android.systemui.power.BatteryController;
 import com.android.systemui.power.PowerNotificationWarnings;
+import com.android.systemui.res.R;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.phone.SystemUIDialog;
 import com.android.systemui.util.settings.GlobalSettings;
@@ -41,14 +44,17 @@ import com.google.android.systemui.power.batteryevent.aidl.BatteryEventType;
 import dagger.Lazy;
 
 import java.io.PrintWriter;
+import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.concurrent.Executor;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
 /**
  * Google implementation of {@link PowerNotificationWarnings}: handles tiered
- * low battery notifications (low, severe, extreme) and integration with Flipendo.
+ * low battery notifications (low, severe, extreme), first-time battery saver
+ * confirmation dialog, and integration with Flipendo.
  */
 @SysUISingleton
 public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnings {
@@ -58,12 +64,15 @@ public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnin
     public static final String ACTION_START_FLIPENDO = "systemui.power.action.START_FLIPENDO";
     public static final String ACTION_DISMISS_SEVERE_LOW_BATTERY_WARNING =
             "PNW.dismissSevereLowBatteryWarning";
+    public static final String ACTION_FLIPENDO_START_SAVER_CONFIRMATION =
+            "FLIPENDO.startSaverConfirmation";
 
     protected final Context mContext;
     protected final UiEventLogger mUiEventLogger;
     protected final Handler mHandler;
     protected final Executor mBgExecutor;
     protected final LowPowerWarningsController mLowPowerWarningsController;
+    protected final Provider<BatterySaverConfirmationDialog> mBatterySaverConfirmationDialogProvider;
 
     protected final BroadcastReceiver mGoogleReceiver = new BroadcastReceiver() {
         @Override
@@ -83,6 +92,7 @@ public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnin
             UserTracker userTracker,
             SystemUIDialog.Factory systemUIDialogFactory,
             GlobalSettings globalSettings,
+            Provider<BatterySaverConfirmationDialog> batterySaverConfirmationDialogProvider,
             @Main Looper mainLooper,
             @Background Executor bgExecutor) {
         super(context, activityStarter, broadcastSender, batteryControllerLazy,
@@ -91,6 +101,7 @@ public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnin
         mUiEventLogger = uiEventLogger;
         mHandler = new Handler(mainLooper);
         mBgExecutor = bgExecutor;
+        mBatterySaverConfirmationDialogProvider = batterySaverConfirmationDialogProvider;
 
         mLowPowerWarningsController = new LowPowerWarningsController(
                 context, globalSettings, uiEventLogger, bgExecutor);
@@ -98,6 +109,8 @@ public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnin
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_START_FLIPENDO);
         filter.addAction(ACTION_DISMISS_SEVERE_LOW_BATTERY_WARNING);
+        filter.addAction(BatterySaverUtils.ACTION_SHOW_START_SAVER_CONFIRMATION);
+        filter.addAction(ACTION_FLIPENDO_START_SAVER_CONFIRMATION);
         mContext.registerReceiver(mGoogleReceiver, filter, Context.RECEIVER_EXPORTED);
     }
 
@@ -123,6 +136,24 @@ public class PowerNotificationWarningsGoogleImpl extends PowerNotificationWarnin
                         mLowPowerWarningsController.severeLowBatteryNotification.cancel();
                     }
                     mLowPowerWarningsController.severeLowBatteryNotificationCancelled = true;
+                }
+                break;
+            case BatterySaverUtils.ACTION_SHOW_START_SAVER_CONFIRMATION:
+            case ACTION_FLIPENDO_START_SAVER_CONFIRMATION:
+                if (mContext.getResources().getBoolean(R.bool.config_extra_battery_saver_confirmation)) {
+                    if (mBatterySaverConfirmationDialogProvider != null) {
+                        BatterySaverConfirmationDialog dialog =
+                                mBatterySaverConfirmationDialogProvider.get();
+                        Expandable expandable = null;
+                        if (mBatteryControllerLazy != null && mBatteryControllerLazy.get() != null) {
+                            WeakReference<Expandable> ref =
+                                    mBatteryControllerLazy.get().getLastPowerSaverStartExpandable();
+                            if (ref != null) {
+                                expandable = ref.get();
+                            }
+                        }
+                        dialog.show(expandable);
+                    }
                 }
                 break;
             default:
