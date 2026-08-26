@@ -24,6 +24,8 @@ import com.android.systemui.power.PowerUI;
 import com.android.systemui.power.data.repository.PowerRepositoryModule;
 import com.android.systemui.statusbar.policy.ConfigurationController;
 
+import com.google.android.systemui.power.PowerNotificationWarningsGoogleImpl;
+
 import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.ClassKey;
@@ -52,7 +54,7 @@ public interface PowerModule {
     @Binds
     EnhancedEstimates bindEnhancedEstimates(EnhancedEstimatesImpl enhancedEstimates);
 
-    /** */
+    /** Google flavour: Tiered low battery warnings. */
     @Binds
-    PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarnings controllerImpl);
+    PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarningsGoogleImpl controllerImpl);
 }
