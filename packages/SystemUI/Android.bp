@@ -576,6 +576,8 @@ android_library {
         "uilatencystats_flags_core_java_lib",
         "personalcontext_ace_visualizer",
         "googlebattery",
+        "wirelesscharger",
+        "android.frameworks.stats-V1-java",
         "tensorflowlite_java",
     ],
     enable_ksp: true,

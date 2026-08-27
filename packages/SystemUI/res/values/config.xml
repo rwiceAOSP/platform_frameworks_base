@@ -1259,4 +1259,8 @@
     Indicates whether to use the Alerts channel for storage notifications.
     -->
     <bool name="config_storageNotificationsUseAlertsChannel">false</bool>
+
+    <!-- Reverse charging NFC conflicts -->
+    <integer-array name="config_nfc_conflict_with_usb_audio_productid" />
+    <integer-array name="config_nfc_conflict_with_usb_audio_vendorid" />
 </resources>

@@ -28,6 +28,7 @@ import com.android.systemui.Flags;
 import com.android.systemui.ScreenDecorationsModule;
 import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
+import com.google.android.systemui.statusbar.policy.GooglePolicyModule;
 import com.android.systemui.accessibility.AccessibilityModule;
 import com.android.systemui.accessibility.SystemActionsModule;
 import com.android.systemui.accessibility.data.repository.AccessibilityRepositoryModule;
@@ -140,7 +141,7 @@ import javax.inject.Provider;
 @Module(includes = {
         AccessibilityModule.class,
         AccessibilityRepositoryModule.class,
-        AospPolicyModule.class,
+        GooglePolicyModule.class,
         BatterySaverModule.class,
         CentralSurfacesModule.class,
         ClipboardOverlayOverrideModule.class,

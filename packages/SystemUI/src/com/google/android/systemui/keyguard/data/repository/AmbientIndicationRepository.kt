@@ -6,5 +6,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 
 class AmbientIndicationRepository {
     val ambientMusic = MutableStateFlow<AmbientIndicationMusic?>(null)
+    val reverseChargingMessage = MutableStateFlow("")
+    val wirelessChargingMessage = MutableStateFlow("")
     val ambientMusicStatus = MutableStateFlow(AmbientIndicationMusicStatus(false, false))
 }

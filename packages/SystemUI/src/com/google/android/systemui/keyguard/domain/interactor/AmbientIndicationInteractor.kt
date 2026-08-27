@@ -5,26 +5,16 @@ import com.android.systemui.keyguard.domain.interactor.KeyguardInteractor
 import com.google.android.systemui.keyguard.data.repository.AmbientIndicationRepository
 import com.google.android.systemui.keyguard.shared.AmbientIndicationMusic
 import com.google.android.systemui.keyguard.shared.ExtendedIndication
-import com.android.systemui.dagger.SysUISingleton
-import javax.inject.Inject
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import javax.inject.Inject
 
-@SysUISingleton
-class AmbientIndicationInteractor
-@Inject
-constructor(
+class AmbientIndicationInteractor @Inject constructor(
     val ambientIndicationRepository: AmbientIndicationRepository,
-    val keyguardInteractor: KeyguardInteractor,
+    val keyguardInteractor: KeyguardInteractor
 ) {
-
-    val ambientMusicState: StateFlow<AmbientIndicationMusic?> =
-        ambientIndicationRepository.ambientMusic.asStateFlow()
-
-    fun hideAmbientMusic() {
-        ambientIndicationRepository.ambientMusic.value = null
-        keyguardInteractor.setAmbientIndicationVisible(false)
-    }
+    val ambientMusicState = ambientIndicationRepository.ambientMusic.asStateFlow()
+    val reverseChargingMessage = ambientIndicationRepository.reverseChargingMessage.asStateFlow()
+    val wirelessChargingMessage = ambientIndicationRepository.wirelessChargingMessage.asStateFlow()
 
     fun setAmbientMusic(
         text: CharSequence?,
@@ -46,5 +36,10 @@ constructor(
                 extendedIndication = extendedIndication,
             )
         keyguardInteractor.setAmbientIndicationVisible(true)
+    }
+
+    fun hideAmbientMusic() {
+        ambientIndicationRepository.ambientMusic.value = null
+        keyguardInteractor.setAmbientIndicationVisible(false)
     }
 }

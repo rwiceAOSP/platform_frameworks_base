@@ -33,6 +33,12 @@ constructor(
     val ambientIndicationMusicState: StateFlow<AmbientIndicationMusic?> =
         ambientIndicationInteractor.ambientMusicState
 
+    val reverseChargingMessage: StateFlow<String> =
+        ambientIndicationInteractor.reverseChargingMessage
+
+    val wirelessChargingMessage: StateFlow<String> =
+        ambientIndicationInteractor.wirelessChargingMessage
+
     private val burnInFlow: Flow<BurnInModel> =
         combine(
                 burnInInteractor.burnIn(

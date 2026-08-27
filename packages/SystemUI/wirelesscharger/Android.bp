@@ -1,0 +1,9 @@
+java_library {
+    name: "wirelesscharger",
+    srcs: [
+        "src/**/*.java",
+    ],
+    static_libs: [
+        "vendor.google.wireless_charger-latest-java",
+    ],
+}

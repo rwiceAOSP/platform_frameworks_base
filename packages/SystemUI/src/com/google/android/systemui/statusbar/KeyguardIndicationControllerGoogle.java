@@ -356,4 +356,22 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
                 .format(java.util.Date.from(java.time.Instant.ofEpochMilli(estimatedTargetTimeMillis)));
     }
 
+    public void setReverseChargingMessage(CharSequence message) {
+        if (mStatusBarStateController.isDozing()) {
+            return;
+        }
+        if (TextUtils.isEmpty(message)) {
+            mRotateTextViewController.hideIndication(10);
+            return;
+        }
+        Drawable drawable = mContext.getDrawable(R.anim.reverse_charging_animation);
+        mRotateTextViewController.updateIndication(
+                10,
+                new KeyguardIndication.Builder()
+                        .setMessage(message)
+                        .setIcon(drawable)
+                        .setTextColor(mInitialTextColorState)
+                        .build(),
+                true);
+    }
 }

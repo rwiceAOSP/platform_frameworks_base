@@ -103,6 +103,24 @@ object KeyguardAmbientIndicationAreaViewBinder {
                     }
                 }
                 launch {
+                    viewModel.reverseChargingMessage.collect { str ->
+                        if (ambientIndicationContainer.mReverseChargingMessage != str || ambientIndicationContainer.mWirelessChargingMessage != null) {
+                            ambientIndicationContainer.mWirelessChargingMessage = null
+                            ambientIndicationContainer.mReverseChargingMessage = str
+                            ambientIndicationContainer.updatePill()
+                        }
+                    }
+                }
+                launch {
+                    viewModel.wirelessChargingMessage.collect { str ->
+                        if (ambientIndicationContainer.mWirelessChargingMessage != str || ambientIndicationContainer.mReverseChargingMessage != null) {
+                            ambientIndicationContainer.mWirelessChargingMessage = str
+                            ambientIndicationContainer.mReverseChargingMessage = null
+                            ambientIndicationContainer.updatePill()
+                        }
+                    }
+                }
+                launch {
                     keyguardInteractor.dozeTransitionModel.collect { dozeTransition ->
                         if (
                             dozeTransition.from == DozeStateModel.INITIALIZED &&

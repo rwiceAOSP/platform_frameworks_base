@@ -125,6 +125,9 @@ open class AmbientIndicationContainer(context: Context, attrs: AttributeSet) :
     lateinit var mTextViewExtended: TextView
     var mUsingExtendedIndication: Boolean = false
     var mWakeLock: WakeLock? = null
+    @JvmField var mReverseChargingAnimation: Drawable? = null
+    @JvmField var mReverseChargingMessage: CharSequence? = null
+    @JvmField var mWirelessChargingMessage: CharSequence? = null
 
     init {
         mAnimationState = 0
@@ -1056,27 +1059,48 @@ open class AmbientIndicationContainer(context: Context, attrs: AttributeSet) :
         var iconDrawable: Drawable?
         var textIsEmpty: Boolean
 
-        if (!TextUtils.isEmpty(text) || textIsEmptyNonNull) {
-            var icon = mAmbientIconOverride
-            if (icon == null) {
-                icon =
-                    if (textCurrentlyVisible) {
-                        getAmbientMusicNoteIcon()
-                    } else {
-                        if (mAmbientMusicAnimation == null) {
-                            mAmbientMusicAnimation = context.getDrawable(R.anim.audioanim_animation)
+        if (TextUtils.isEmpty(mReverseChargingMessage)) {
+            if (!TextUtils.isEmpty(mWirelessChargingMessage)) {
+                mIndicationTextMode = 3
+                text = mWirelessChargingMessage
+                mTextView.isClickable = false
+                mIconView.isClickable = false
+                mUsingExtendedIndication = false
+                iconDrawable = null
+                textIsEmpty = false
+            } else if (!TextUtils.isEmpty(text) || textIsEmptyNonNull) {
+                var icon = mAmbientIconOverride
+                if (icon == null) {
+                    icon =
+                        if (textCurrentlyVisible) {
+                            getAmbientMusicNoteIcon()
+                        } else {
+                            if (mAmbientMusicAnimation == null) {
+                                mAmbientMusicAnimation = context.getDrawable(R.anim.audioanim_animation)
+                            }
+                            mAmbientMusicAnimation
                         }
-                        mAmbientMusicAnimation
+                    if (mUsingExtendedIndication) {
+                        icon = getAmbientMusicNoteIcon()
                     }
-                if (mUsingExtendedIndication) {
-                    icon = getAmbientMusicNoteIcon()
                 }
+                iconDrawable = icon
+                textIsEmpty = textIsEmptyNonNull
+            } else {
+                iconDrawable = null
+                textIsEmpty = textIsEmptyNonNull
             }
-            iconDrawable = icon
-            textIsEmpty = textIsEmptyNonNull
         } else {
-            iconDrawable = null
-            textIsEmpty = textIsEmptyNonNull
+            mIndicationTextMode = 2
+            text = mReverseChargingMessage
+            if (mReverseChargingAnimation == null) {
+                mReverseChargingAnimation = context.getDrawable(R.anim.reverse_charging_animation)
+            }
+            iconDrawable = mReverseChargingAnimation
+            mTextView.isClickable = false
+            mIconView.isClickable = false
+            mUsingExtendedIndication = false
+            textIsEmpty = false
         }
 
         if (mEnabledExtendedInteraction) {
