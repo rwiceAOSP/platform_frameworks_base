@@ -26,6 +26,8 @@ import com.android.keyguard.KeyguardViewController;
 import com.android.systemui.CoreStartable;
 import com.android.systemui.Flags;
 import com.android.systemui.ScreenDecorationsModule;
+import com.android.systemui.statusbar.KeyguardIndicationController;
+import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
 import com.android.systemui.accessibility.AccessibilityModule;
 import com.android.systemui.accessibility.SystemActionsModule;
 import com.android.systemui.accessibility.data.repository.AccessibilityRepositoryModule;
@@ -289,4 +291,8 @@ public abstract class ReferenceSystemUIModule {
     static Set<Class<? extends CoreStartable>> providesStatusBarStateControllerDeps() {
         return Set.of(CentralSurfaces.class);
     }
+
+    @Binds
+    abstract KeyguardIndicationController bindKeyguardIndicationController(
+            KeyguardIndicationControllerGoogle keyguardIndicationControllerGoogle);
 }

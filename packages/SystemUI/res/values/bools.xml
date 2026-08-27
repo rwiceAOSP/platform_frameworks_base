@@ -71,4 +71,17 @@
 
     <!-- windowLightStatusBar value for the post recording activity -->
     <bool name="post_recording_light_toolbar">true</bool>
+
+    <!-- Google Battery & Power features -->
+    <bool name="config_battery_index_enabled">false</bool>
+    <bool name="config_battery_health_periodic_update_enabled">true</bool>
+    <bool name="config_adaptive_charging_enabled">true</bool>
+    <bool name="config_adaptive_charging_warning_enabled">true</bool>
+    <bool name="config_battery_defender_enabled">true</bool>
+    <bool name="config_incompatible_charger_warning_enabled">true</bool>
+    <bool name="config_charge_limit_enabled">true</bool>
+    <bool name="config_charge_limit_discovery_enabled">true</bool>
+    <bool name="config_wlc_support_enabled">true</bool>
+    <bool name="config_nfc_conflict_with_wlc">false</bool>
+    <bool name="config_nfc_conflict_with_usb_audio">false</bool>
 </resources>

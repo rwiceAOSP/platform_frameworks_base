@@ -57,4 +57,11 @@ public interface PowerModule {
     /** Google flavour: Tiered low battery warnings. */
     @Binds
     PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarningsGoogleImpl controllerImpl);
+
+    /** Google flavour: AdaptiveChargingManager provider. */
+    @dagger.Provides
+    static com.google.android.systemui.googlebattery.AdaptiveChargingManager provideAdaptiveChargingManager(
+            @com.android.systemui.dagger.qualifiers.Application android.content.Context context) {
+        return new com.google.android.systemui.googlebattery.AdaptiveChargingManager(context);
+    }
 }

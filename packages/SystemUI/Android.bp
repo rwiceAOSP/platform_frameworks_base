@@ -478,6 +478,7 @@ android_library {
         "src/**/*.kt",
         "src/**/*.java",
         "src/**/I*.aidl",
+        "src/com/google/android/systemui/power/batteryhealth/*.aidl",
         "compose/features/src/**/*.kt",
         "compose/facade/enabled/src/**/*.kt",
     ] + select(product_variable("debuggable"), {
@@ -574,6 +575,7 @@ android_library {
         "SurfaceEffectsComposeLib",
         "uilatencystats_flags_core_java_lib",
         "personalcontext_ace_visualizer",
+        "googlebattery",
         "tensorflowlite_java",
     ],
     enable_ksp: true,

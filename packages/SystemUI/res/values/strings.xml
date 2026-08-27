@@ -5062,4 +5062,37 @@
     <!-- Accessibility label for the thumbs down button on attribution dialog. [CHAR_LIMIT=NONE] -->
     <string name="ace_attribution_thumbs_down_button_accessibility_description">Thumbs down feedback button</string>
 
+    <!-- Adaptive Charging notifications [CHAR_LIMIT=NONE] -->
+    <string name="adaptive_charging_notify_title">Adaptive Charging is on</string>
+    <string name="adaptive_charging_notify_des">Battery full by %1$s. Charging steadily to extend battery lifespan.</string>
+    <string name="adaptive_charging_notify_turn_off_once">Turn off once</string>
+    <!-- Lockscreen adaptive charging estimate. %1$s = battery percentage, %2$s = estimated full time [CHAR_LIMIT=NONE] -->
+    <string name="adaptive_charging_time_estimate">%1$s \u2022 Adaptive Charging \u2022 Full by %2$s</string>
+
+    <!-- Charge limit discovery notification [CHAR_LIMIT=NONE] -->
+    <string name="charge_limit_discovery_notification_title">Protect your battery during charging</string>
+    <string name="charge_limit_discovery_notification_text">Try turning on the 80% limit feature to protect battery health and lifespan. You can manage this in settings anytime</string>
+    <string name="charge_limit_discovery_notification_enable_button">Enable now</string>
+    <string name="charge_limit_discovery_notification_help_url" translatable="false">https://support.google.com/pixelphone?p=eu_ecodesign_charging</string>
+    <string name="battery_health_notify_learn_more">Learn more</string>
+
+    <!-- Keyguard charge limit indications [CHAR_LIMIT=NONE] -->
+    <string name="keyguard_plugged_in_charging_limited">%1$s \u2022 Charging limit</string>
+    <string name="keyguard_indication_charging_time_charge_limit">%2$s \u2022 Done charging by %1$s</string>
+    <string name="keyguard_indication_charging_time_charge_limit_v1">%2$s \u2022 Done charging in %1$s</string>
+    <string name="keyguard_indication_charging_time_reach_charge_limit">%1$s \u2022 Done charging</string>
+
+
+    <!-- Reverse charging (Battery Share) [CHAR_LIMIT=NONE] -->
+    <string name="reverse_charging_title">Battery Share</string>
+    <string name="reverse_charging_on_notification_title">Battery Share is on</string>
+    <string name="reverse_charging_device_name_text">Other Pixel</string>
+    <string name="reverse_charging_device_providing_charge_text">%1$s providing charge (%2$s)</string>
+    <string name="reverse_charging_started_sound" translatable="false">/product/media/audio/ui/reverse_charging_start.ogg</string>
+    <string name="status_bar_google_reverse_charging" translatable="false">batteryshare</string>
+    <string name="charging_reverse_text">Sharing battery</string>
+    <string name="too_hot_label">Pixel too hot</string>
+    <string name="wireless_charging_label">Charging wirelessly</string>
+    <string name="low_battery_label">Low battery</string>
+
 </resources>

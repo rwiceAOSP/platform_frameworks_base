@@ -164,7 +164,7 @@ public class KeyguardIndicationController {
     public static final long DEFAULT_HIDE_DELAY_MS =
             DEFAULT_MESSAGE_TIME + KeyguardIndicationTextView.Y_TRANSLATE_DURATION;
 
-    private final Context mContext;
+    protected final Context mContext;
     private final BroadcastDispatcher mBroadcastDispatcher;
     private final KeyguardStateController mKeyguardStateController;
     protected final StatusBarStateController mStatusBarStateController;
@@ -225,14 +225,14 @@ public class KeyguardIndicationController {
     protected int mChargingStatus;
 
     /** Whether the battery defender is triggered. */
-    private boolean mBatteryDefender;
+    protected boolean mBatteryDefender;
     /** Whether the battery defender is triggered with the device plugged. */
-    private boolean mEnableBatteryDefender;
-    private boolean mBatteryDead;
-    private boolean mIncompatibleCharger;
-    private int mChargingWattage;
-    private int mBatteryLevel = -1;
-    private boolean mBatteryPresent = true;
+    protected boolean mEnableBatteryDefender;
+    protected boolean mBatteryDead;
+    protected boolean mIncompatibleCharger;
+    protected int mChargingWattage;
+    protected int mBatteryLevel = -1;
+    protected boolean mBatteryPresent = true;
     protected long mChargingTimeRemaining;
     private Pair<String, BiometricSourceType> mBiometricErrorMessageToShowOnScreenOn;
     private Set<Integer> mCoExFaceAcquisitionMsgIdsToShow;
