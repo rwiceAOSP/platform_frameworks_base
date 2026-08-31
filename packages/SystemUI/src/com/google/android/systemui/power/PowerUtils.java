@@ -1,0 +1,59 @@
+package com.google.android.systemui.power;
+
+import android.app.PendingIntent;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.UserHandle;
+import android.util.Log;
+
+import androidx.core.app.NotificationCompat;
+
+/** Shared helpers for Google SystemUI power notifications. */
+public final class PowerUtils {
+
+    private PowerUtils() {}
+
+    /**
+     * Creates a {@link PendingIntent} that broadcasts to this package (as the current user) with
+     * the given action and optional extras.
+     */
+    public static PendingIntent createPendingIntent(Context context, String action, Bundle bundle) {
+        Intent intent =
+                new Intent(action)
+                        .setPackage(context.getPackageName())
+                        .setFlags(1342177280); // FLAG_RECEIVER_FOREGROUND | FLAG_IMMUTABLE
+        if (bundle != null) {
+            intent.putExtras(bundle);
+        }
+        return PendingIntent.getBroadcastAsUser(
+                context, 0, intent, bundle != null ? 335544320 : 67108864, UserHandle.CURRENT);
+    }
+
+    /** Whether Flipendo (Extreme Battery Saver) is currently enabled. */
+    public static boolean isFlipendoEnabled(ContentResolver contentResolver) {
+        try {
+            Bundle result =
+                    contentResolver.call(
+                            "com.google.android.flipendo.api",
+                            "get_flipendo_state",
+                            null,
+                            Bundle.EMPTY);
+            return result != null && result.getBoolean("flipendo_state", false);
+        } catch (Exception e) {
+            Log.e("PowerUtils", "isFlipendoEnabled() failed", e);
+            return false;
+        }
+    }
+
+    /** Overrides the app name shown for the notification. */
+    public static void overrideNotificationAppName(
+            Context context, NotificationCompat.Builder builder) {
+        Bundle bundle = new Bundle(1);
+        bundle.putString(
+                "android.substName",
+                context.getString(com.android.internal.R.string.android_system_label));
+        builder.addExtras(bundle);
+    }
+}

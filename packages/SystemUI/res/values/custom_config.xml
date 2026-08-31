@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Configuration for the tiered low battery warning notifications
+  (com.google.android.systemui.power).
+-->
+<resources>
+    <!-- Whether to show the severe (Extreme Battery Saver) reminder notification. -->
+    <bool name="config_show_extreme_battery_saver_reminder">true</bool>
+</resources>
