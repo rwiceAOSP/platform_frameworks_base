@@ -1,0 +1,29 @@
+package com.google.android.systemui.power;
+
+import com.android.internal.logging.UiEventLogger;
+
+/** UI events logged by the tiered low / severe / extreme battery warning notifications. */
+public enum BatteryMetricEvent implements UiEventLogger.UiEventEnum {
+    EXTREME_LOW_BATTERY_NOTIFICATION(1351),
+    BATTERY_SAVER_ENABLED(1359),
+    BATTERY_SAVER_ENABLED_REASON(1360),
+    BATTERY_SAVER_DISABLED(1372),
+    BATTERY_SAVER_DISABLED_REASON(1373),
+    SEVERE_LOW_BATTERY_NOTIFICATION_TURN_ON_EBS(1834),
+    SEVERE_LOW_BATTERY_NOTIFICATION_SWITCH_TO_EBS(1835),
+    SEVERE_LOW_BATTERY_NOTIFICATION_TURN_ON_EBS_CLICK_TURN_ON(1836),
+    SEVERE_LOW_BATTERY_NOTIFICATION_SWITCH_TO_EBS_CLICK_SWITCH(1837),
+    SEVERE_LOW_BATTERY_NOTIFICATION_TURN_ON_EBS_DISMISS(1838),
+    SEVERE_LOW_BATTERY_NOTIFICATION_SWITCH_TO_EBS_DISMISS(1839);
+
+    private final int mId;
+
+    BatteryMetricEvent(int id) {
+        mId = id;
+    }
+
+    @Override
+    public int getId() {
+        return mId;
+    }
+}
