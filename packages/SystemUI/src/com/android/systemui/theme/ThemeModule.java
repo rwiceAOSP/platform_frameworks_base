@@ -26,6 +26,8 @@ import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.res.R;
 import com.android.systemui.util.concurrency.SysUIConcurrencyModule;
 
+import com.google.android.systemui.theme.ThemeOverlayControllerGoogle;
+
 import dagger.Module;
 import dagger.Provides;
 import dagger.multibindings.ClassKey;
@@ -63,7 +65,7 @@ public class ThemeModule {
     @IntoMap
     @ClassKey(ThemeOverlayController.class)
     public CoreStartable provideThemeOverlayController(
-            Provider<ThemeOverlayController> themeOverlayControllerProvider) {
+            Provider<ThemeOverlayControllerGoogle> themeOverlayControllerProvider) {
         if (enableThemeService()) {
             return new NoOpCoreStartable();
         }
