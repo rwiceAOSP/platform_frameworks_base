@@ -47,6 +47,22 @@ public final class PowerUtils {
         }
     }
 
+    /** Whether Flipendo's aggressive (Extreme Battery Saver) mode is selected. */
+    public static boolean isFlipendoSelected(ContentResolver contentResolver) {
+        try {
+            Bundle result =
+                    contentResolver.call(
+                            "com.google.android.flipendo.api",
+                            "get_flipendo_state",
+                            null,
+                            Bundle.EMPTY);
+            return result != null && result.getBoolean("is_flipendo_aggressive", false);
+        } catch (Exception e) {
+            Log.e("PowerUtils", "isFlipendoSelected() failed", e);
+            return false;
+        }
+    }
+
     /** Overrides the app name shown for the notification. */
     public static void overrideNotificationAppName(
             Context context, NotificationCompat.Builder builder) {
