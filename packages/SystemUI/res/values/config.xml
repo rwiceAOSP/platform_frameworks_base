@@ -85,7 +85,7 @@
 
     <!-- The default tiles to display in QuickSettings after the internet tile split-->
     <string name="quick_settings_tiles_default_split" translatable="false">
-        wifi,bt,cell,cast,dnd,wallet,airplane,rotation,flashlight,battery,alarm,controls,screenrecord
+        wifi,bt,cell,custom(com.google.android.gms/.nearby.sharing.SharingTileService),dnd,wallet,airplane,rotation,flashlight,battery,alarm,controls,cast,screenrecord
     </string>
 
     <!-- The default large tiles in Quick Settings after the internet tile split -->
@@ -148,6 +148,8 @@
          config_quickSettingsHearingDevicesRelatedToolName. If this array is empty or the sizes
          don't match, the original application icons will be used. -->
     <string-array name="config_quickSettingsHearingDevicesRelatedToolIcon" translatable="false">
+        <item>ic_scribe_qs_icon_tint_48dp</item>
+        <item>ic_dolphin_qs_icon_tint_48dp</item>
     </string-array>
 
     <!-- Show indicator for Wifi on but not connected. -->
@@ -560,7 +562,7 @@
     <string name="launcher_overlayable_package" translatable="false">com.google.android.apps.nexuslauncher</string>
 
     <!-- ThemePicker package name for overlaying icons. -->
-    <string name="themepicker_overlayable_package" translatable="false">com.android.wallpaper</string>
+    <string name="themepicker_overlayable_package" translatable="false">com.google.android.apps.wallpaper</string>
 
     <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
          Note that while rounded.xml includes the entire path (including the horizontal and vertical
@@ -590,7 +592,7 @@
     <bool name="config_showBatteryEstimateQSBH">false</bool>
 
     <!-- Whether to show extra battery saver confirmation dialog. -->
-    <bool name="config_extra_battery_saver_confirmation">false</bool>
+    <bool name="config_extra_battery_saver_confirmation">true</bool>
 
     <!-- A path representing a shield. Will sometimes be displayed with the battery icon when
          needed. This path is a 10px wide and 13px tall. -->
@@ -760,7 +762,16 @@
          are still counted towards the total frames to determine whether a deferred message
          (see config_face_help_msgs_defer_until_timeout) meets the threshold % of frames to show on
          face timeout. -->
-     <integer-array name="config_face_acquire_device_entry_ignorelist" translatable="false" >
+     <integer-array name="config_face_acquire_device_entry_ignorelist" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>11</item>
+        <item>12</item>
+        <item>14</item>
+        <item>15</item>
+        <item>19</item>
     </integer-array>
 
     <!-- Which face help messages to defer until face auth times out. If face auth is cancelled
@@ -768,6 +779,7 @@
          if it doesn't meet a threshold % of authentication frames specified by.
          config_face_help_msgs_defer_until_timeout_threshold. -->
     <integer-array name="config_face_help_msgs_defer_until_timeout">
+        <item>3</item>
     </integer-array>
 
     <!-- Which face help messages to ignore when determining the % of frames that meet
@@ -1021,13 +1033,13 @@
     The package name of the app store app. If empty, features using this should be gracefully
     disabled.
     -->
-    <string name="config_appStorePackageName" translatable="false"></string>
+    <string name="config_appStorePackageName" translatable="false">com.android.vending</string>
 
     <!-- Template for a link that leads to an app page in the relevant app store. If empty,
     features using this should be gracefully disabled. If not empty, it must include a
     "$packageName" part that will be replaced by the code with the package name of the target app.
     -->
-    <string name="config_appStoreAppLinkTemplate" translatable="false"></string>
+    <string name="config_appStoreAppLinkTemplate" translatable="false">https://play.google.com/store/apps/details?id=$packageName</string>
 
     <!-- Flag controlling whether visual query attention detection has been enabled. -->
     <bool name="config_enableVisualQueryAttentionDetection">false</bool>
@@ -1126,10 +1138,10 @@
     <string translatable="false" name="config_lowLightDreamComponent"/>
 
     <!-- The type of the light sensor used by the low light monitor. -->
-    <string name="config_lowLightMonitorLightSensorType" translatable="false"/>
+    <string name="config_lowLightMonitorLightSensorType" translatable="false">com.google.sensor.auto_brightness</string>
 
     <!-- The name of the light sensor used by the low light monitor. -->
-    <string name="config_lowLightMonitorLightSensorName" translatable="false"/>
+    <string name="config_lowLightMonitorLightSensorName" translatable="false">Auto Brightness</string>
 
     <!-- Determines whether low light should be allowed pre-unlock -->
     <bool translatable="false" name="config_allowLowLightBehaviorWhenLocked">false</bool>

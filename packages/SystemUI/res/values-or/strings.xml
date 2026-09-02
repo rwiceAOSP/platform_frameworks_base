@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"ଆପଣଙ୍କ ଡିଭାଇସରେ ଦୈନିକ ସୀମା ଏବଂ ଡାଉନଟାଇମ ପରି କିଛି ନିୟନ୍ତ୍ରଣକୁ କେବଳ ଏକ PIN ମାଧ୍ୟମରେ ପରିବର୍ତ୍ତନ କରାଯାଇପାରିବ।"</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"କିଛି ନିୟନ୍ତ୍ରଣକୁ କେବଳ ତୁମ ବାପାମାଙ୍କ ଦ୍ୱାରା ପରିବର୍ତ୍ତନ କରାଯାଇପାରିବ"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ଦ୍ୱାରା ଅନ୍‌ଲକ୍ ରହିଛି"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">ଏକ୍ସଟେଣ୍ଡ ଅନଲକ ଦ୍ୱାରା ଅନଲକ ରଖାଯାଇଛି</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"ସ୍କ୍ରିନ ଲକ ହୋଇଯାଇଛି। ପ୍ରମାଣୀକରଣ ପାଇଁ ଅନେକ ଚେଷ୍ଟା କରାଯାଇଛି।"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"ସ୍କ୍ରିନ ଲକ ହୋଇଯାଇଛି\nପ୍ରମାଣୀକରଣ ବିଫଳ ହୋଇଛି"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"ଆପଣଙ୍କ ୱାଚ ଦ୍ୱାରା ଲକ କରାଯାଇଛି"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"ସାଟେଲାଇଟ, ଭଲ କନେକ୍ସନ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"ସାଟେଲାଇଟ, କନେକ୍ସନ ଉପଲବ୍ଧ"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"ସେଟେଲାଇଟ"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"ସେଟେଲାଇଟ SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel ସେଟେଲାଇଟ SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"କେବଳ ଜରୁରୀକାଳୀନ କଲ କିମ୍ବା SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"ସେଟଲାଇଟ ନେଟୱାର୍କ"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>।"</string>

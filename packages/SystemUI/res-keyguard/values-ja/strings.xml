@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"セキュリティ強化が必要: デバイスがしばらくロック解除されていません。"</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"顔認証でロックを解除できません。何度もログインに失敗したためログインできません。"</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"指紋でロックを解除できません。何度もログインに失敗したためログインできません。"</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"信頼エージェントは利用できません"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">ロック解除延長は利用できません</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"間違った PIN による試行回数が上限に達しました"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"この PIN はすでに試しました。別のをお試しください。"</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"このパターンはすでに試しました。別のものをお試しください。"</string>

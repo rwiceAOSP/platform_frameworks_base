@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"అదనపు సెక్యూరిటీ అవసరం. డివైజ్‌ను ఈ మధ్య అన్‌లాక్ చేయలేదు."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"ఫేస్‌తో అన్‌లాక్ అవ్వదు. ఎక్కువ సార్లు ట్రై చేశారు."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"వేలిముద్ర‌తో అన్‌లాకవదు. మరీ ఎక్కువ ట్రైలు చేశారు."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"విశ్వసనీయ ఏజెంట్ అందుబాటులో లేదు"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">ఎక్స్‌టెండ్ అన్‌లాక్ అనే ఆప్షన్ అందుబాటులో లేదు</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"తప్పు PINతో చాలా ఎక్కువ సార్లు ట్రై చేయడం జరిగింది"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"ఆ PINను ఇప్పటికే ట్రై చేశారు. వేరే PINతో ప్రయత్నించండి."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"ఆ ఆకృతిని ఇప్పటికే ట్రై చేశారు. మరో ఆకృతిని ట్రై చేయండి."</string>

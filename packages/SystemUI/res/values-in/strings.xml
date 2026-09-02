@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Beberapa kontrol di perangkat Anda, seperti batas harian &amp; periode nonaktif, hanya dapat diubah dengan PIN."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Beberapa kontrol hanya dapat diubah oleh orang tuamu"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Tetap terbuka kuncinya oleh TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Tidak dikunci karena Extend Unlock aktif</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Layar dikunci. Terlalu banyak upaya autentikasi."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Layar dikunci\nAutentikasi gagal"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Dikunci oleh smartwatch Anda"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Satelit, koneksi baik"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Satelit, koneksi tersedia"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Satelit"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"SOS via Satelit"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">SOS via Satelit di Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Panggilan darurat atau SOS saja"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Jaringan satelit"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

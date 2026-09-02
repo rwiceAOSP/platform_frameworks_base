@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"तुमच्या डिव्हाइसवरील काही नियंत्रणे, जसे की दैनिक मर्यादा आणि डाउनटाइम फक्त पिन वापरून बदलता येतात."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"काही नियंत्रणे फक्त तुमचे पालकच बदलू शकतात"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ने अनलॉक ठेवले"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">एक्स्टेंड अनलॉक ने अनलॉक केलेले ठेवले</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"स्क्रीन लॉक केली आहे. ऑथेंटिकेशनचे खूप जास्त प्रयत्न केले आहेत."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"स्क्रीन लॉक केली आहे\nऑथेंटिकेशन करता आले नाही"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"तुमच्या वॉचने लॉक केले आहे"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"सॅटेलाइट, चांगले कनेक्शन"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"सॅटेलाइट, कनेक्शन उपलब्ध"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"सॅटेलाइट"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"सॅटेलाइट SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel सॅटेलाइट SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"फक्त आणीबाणी कॉल किंवा SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"सॅटेलाइट नेटवर्क"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

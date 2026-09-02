@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Reforzar seguridad. Mucho tiempo sin desbloquear."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Error de desbloqueo con rostro. Demasiados intentos."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Error de desbloqueo con huella. Demasiados intentos."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"El agente de confianza no está disponible"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Desbloqueo ampliado no disponible</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Demasiados intentos con el PIN incorrecto"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Ya probaste ese PIN. Prueba con otro."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Ya probaste ese patrón. Prueba con uno diferente."</string>

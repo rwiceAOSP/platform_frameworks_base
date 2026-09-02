@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿನ ಕೆಲವು ನಿಯಂತ್ರಣಗಳು, ಉದಾಹರಣೆಗೆ ದೈನಂದಿನ ಮಿತಿಗಳು ಮತ್ತು ಡೌನ್‌ಟೈಮ್, ಪಿನ್ ಮೂಲಕ ಮಾತ್ರ ಬದಲಾಯಿಸಬಹುದು."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"ಕೆಲವು ಕಂಟ್ರೋಲ್‌ಗಳನ್ನು ನಿಮ್ಮ ಪೋಷಕರು ಮಾತ್ರ ಬದಲಾಯಿಸಬಹುದು"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ನಿಂದ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">ಎಕ್ಸ್‌ಟೆಂಡ್ ಅನ್‌ಲಾಕ್ ಮೂಲಕ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಆಗಿದೆ. ಹಲವಾರು ದೃಢೀಕರಣ ಪ್ರಯತ್ನಗಳು."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಆಗಿದೆ\nದೃಢೀಕರಣ ವಿಫಲವಾಗಿದೆ"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"ನಿಮ್ಮ ವಾಚ್‌ನಿಂದ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"ಸ್ಯಾಟಲೈಟ್‌, ಕನೆಕ್ಷನ್ ಉತ್ತಮವಾಗಿದೆ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"ಸ್ಯಾಟಲೈಟ್, ಕನೆಕ್ಷನ್ ಲಭ್ಯವಿದೆ"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"ಸ್ಯಾಟಲೈಟ್"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"ಸ್ಯಾಟಲೈಟ್ SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel ಸ್ಯಾಟಲೈಟ್ SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"ತುರ್ತು ಕರೆಗಳು ಅಥವಾ SOS ಮಾತ್ರ"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"ಸ್ಯಾಟಲೈಟ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳು"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

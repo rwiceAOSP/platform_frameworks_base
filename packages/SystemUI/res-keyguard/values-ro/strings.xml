@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Mai multă securitate necesară. Dispozitivul nu a fost deblocat de ceva timp."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Nu se poate debloca folosind fața. Prea multe încercări."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Nu se poate debloca folosind amprenta. Prea multe încercări."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Agentul de încredere nu este disponibil"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Funcția Prelungirea deblocării nu este disponibilă</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Prea multe încercări cu un cod PIN incorect"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Ai încercat deja acest PIN. Încearcă altul."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Ai încercat deja acest model. Încearcă altul."</string>

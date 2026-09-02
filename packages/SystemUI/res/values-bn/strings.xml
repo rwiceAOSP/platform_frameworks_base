@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"আপনার ডিভাইসের কিছু কন্ট্রোল, যেমন দৈনিক সীমা এবং ডাউনটাইম, একটি পিন দিয়ে শুধুমাত্র পরিবর্তন করা যেতে পারে।"</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"কিছু কন্ট্রোল শুধুমাত্র তোমার অভিভাবক পরিবর্তন করতে পারবেন"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent দিয়ে আনলক করে রাখা হয়েছে"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">এক্সটেন্ড আনলক-এর মাধ্যমে আনলক করে রাখা হয়েছে</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"স্ক্রিন লক করা আছে। যাচাইকরণের জন্য অসংখ্য বার চেষ্টা করা হয়েছে।"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"স্ক্রিন লক করা আছে\nযাচাইকরণ করা যায়নি"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"আপনার স্মার্টওয়াচের সাহায্যে লক করা হয়েছে"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"স্যাটেলাইট, ভালো কানেকশন"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"স্যাটেলাইট, কানেকশন উপলভ্য আছে"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"স্যাটেলাইট"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"স্যাটেলাইট SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel স্যাটেলাইট SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"শুধুমাত্র জরুরি কল বা SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"স্যাটেলাইট নেটওয়ার্ক"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>।"</string>

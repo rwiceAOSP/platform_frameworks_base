@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"ត្រូវការសុវត្ថិភាពបន្ថែម។ មិនបានដោះ​សោឧបករណ៍មួយរយៈ។"</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"មិនអាចដោះសោដោយប្រើមុខទេ។ ព្យាយាមច្រើនដងពេក។"</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"មិនអាចដោះសោដោយប្រើស្នាមម្រាមដៃទេ។ ព្យាយាមច្រើនដងពេក។"</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"ភ្នាក់ងារទុកចិត្តមិនទំនេរទេ"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">មិនអាចប្រើ Extend Unlock បានទេ</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"ព្យាយាមដោយប្រើកូដ PIN មិនត្រឹមត្រូវច្រើនដងពេក"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"បានព្យាយាមប្រើកូដ PIN នោះរួចហើយ។ សូម​សាកល្បងកូដ PIN ​ផ្សេង។"</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"បានសាកល្បងប្រើលំនាំនោះរួចហើយ។ សូមសាកល្បងប្រើលំនាំផ្សេង។"</string>

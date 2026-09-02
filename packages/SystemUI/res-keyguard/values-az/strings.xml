@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Qoruma lazımdır. Cihaz bir müddət açılmayıb."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Üz ilə açmaq olmur. Çox cəhd edilib."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Barmaq izi ilə açmaq olmur. Çox cəhd edilib."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"İnam agenti əlçatan deyil"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Uzaqdan kiliddən çıxarma əlçatan deyil</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Səhv PIN ilə çox cəhd edildi"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Bu PIN-i artıq sınamısınız. Başqasını sınayın."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Bu modeli artıq sınamısınız. Başqasını sınayın."</string>

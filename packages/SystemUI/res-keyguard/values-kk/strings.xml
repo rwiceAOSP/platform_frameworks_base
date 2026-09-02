@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Қауіпсіздікті күшейту қажет. Құрылғы құлпы біраз уақыт ашылмаған."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Құлып бетпен ашылмайды. Тым көп әрекет жасалды."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Құлып саусақ ізімен ашылмайды. Тым көп әрекет жасалды."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Сенімді агент функциясы істемейді."</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Құлыпты ашық ұстау функциясы істемейді.</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"PIN коды тым көп рет қате енгізілді."</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Бұл PIN кодын енгізіп көрдіңіз. Басқасын көріңіз."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Бұл өрнекті енгізіп көрдіңіз. Басқасын көріңіз."</string>

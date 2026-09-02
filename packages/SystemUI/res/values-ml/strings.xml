@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"പ്രതിദിന പരിധി, പ്രവർത്തനരഹിതമായ സമയം പോലുള്ള, നിങ്ങളുടെ ഉപകരണത്തിലുള്ള ചില നിയന്ത്രണങ്ങൾ പിൻ ഉപയോഗിച്ച് മാത്രമേ മാറ്റാനാകൂ."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"നിങ്ങളുടെ രക്ഷിതാവിന് മാത്രമേ ചില നിയന്ത്രണങ്ങൾ മാറ്റാനാകൂ"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ഉപയോഗിച്ച് അൺലോക്ക് ചെയ്‌തത്"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">എക്സ്റ്റൻഡ് അൺലോക്ക്, അൺലോക്ക് നില തുടരുന്നു</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"സ്‌ക്രീൻ ലോക്ക് ചെയ്‌തു. പരിശോധിച്ചുറപ്പിക്കാനുള്ള നിരവധി ശ്രമങ്ങൾ."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"സ്‌ക്രീൻ ലോക്ക് ചെയ്‌തു\nപരിശോധിച്ചുറപ്പിക്കൽ പരാജയപ്പെട്ടു"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"നിങ്ങളുടെ വാച്ച് ഉപയോഗിച്ച് ലോക്ക് ചെയ്‌തിരിക്കുന്നു"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"സാറ്റലൈറ്റ്, മികച്ച കണക്ഷൻ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"സാറ്റലൈറ്റ്, കണക്ഷൻ ലഭ്യമാണ്"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"സാറ്റലൈറ്റ്"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"സാറ്റലൈറ്റ് SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel സാറ്റലൈറ്റ് SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"എമർജൻസി കോളുകൾ അല്ലെങ്കിൽ SOS മാത്രം"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"സാറ്റലൈറ്റ് നെറ്റ്‌വർക്കുകൾ"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

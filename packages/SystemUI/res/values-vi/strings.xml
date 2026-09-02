@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Bạn chỉ có thể thay đổi một số chế độ kiểm soát trên thiết bị bằng mã PIN, chẳng hạn như giới hạn hằng ngày và thời gian ngừng hoạt động."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Chỉ cha mẹ bạn mới có thể thay đổi một số chế độ kiểm soát"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Luôn được TrustAgent mở khóa"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Tiếp tục mở khoá bằng chế độ Kéo dài trạng thái mở khoá</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Đã khoá màn hình. Bạn đã thử xác thực quá nhiều lần."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Đã khoá màn hình\nKhông xác thực được"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Đã bị đồng hồ của bạn khoá"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Kết nối vệ tinh tốt"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Hiện có kết nối vệ tinh"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Vệ tinh"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"Liên lạc khẩn cấp qua vệ tinh"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Liên lạc khẩn cấp qua vệ tinh trên Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Chỉ cuộc gọi khẩn cấp hoặc SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Mạng vệ tinh"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

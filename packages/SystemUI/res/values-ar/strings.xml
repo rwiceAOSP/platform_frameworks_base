@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"لا يمكن تغيير بعض عناصر التحكّم على جهازك، مثل الحدود اليومية ووقت الاستراحة، إلا باستخدام رقم تعريف شخصي."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"لا يمكن تغيير بعض عناصر التحكّم إلا من قِبل والدَيك"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"‏شبكة VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"‏فتح القفل باستمرار بواسطة TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">القفل مفتوح لأنّ ميزة \"إبقاء الجهاز مفتوحًا\" مفعّلة</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"تم قفل الشاشة بسبب إجراء العديد من محاولات المصادقة."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"تم قفل الشاشة\nتعذّرت المصادقة"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"تم قفله من خلال ساعتك"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"قمر صناعي، الاتصال جيد"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"قمر صناعي، الاتصال متوفّر"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"القمر الصناعي"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"اتصالات الطوارئ بالقمر الصناعي"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">‏ميزة \"اتصالات طوارئ بالقمر الصناعي\" في هاتف Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"مكالمات الطوارئ أو اتصالات الطوارئ فقط"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"شبكات الأقمار الصناعية"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"‫\"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>\"، <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>"</string>

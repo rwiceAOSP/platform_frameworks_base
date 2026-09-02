@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"तपाईंको डिभाइसमा सेट गरिएका दैनिक सीमा र डाउनटाइम जस्ता केही कन्ट्रोलहरू PIN प्रयोग गरेर मात्र परिवर्तन गर्न सकिन्छ।"</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"केही कन्ट्रोलहरू तपाईंका अभिभावकले मात्र बदल्न मिल्छ"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ले खुला राखेको"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">एक्स्टेन्ड अनलकले डिभाइस अनलक नै राखेको छ</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"स्क्रिन लक गरिएको छ। धेरै पटक प्रमाणीकरण गर्ने प्रयास गरिएको छ।"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"स्क्रिन लक गरिएको छ\nप्रमाणीकरण गर्न सकिएन"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"तपाईंको स्मार्टवाचले लक गरेको"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"स्याटलाइट, राम्रो कनेक्सन"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"स्याटलाइट, कनेक्सन उपलब्ध छ"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"स्याटलाइट"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"स्याटलाइट SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel को स्याटलाइट SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"आपत्‌कालीन कल वा SOS मात्र"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"स्याटलाइट नेटवर्कहरू"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>।"</string>

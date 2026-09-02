@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"ការគ្រប់គ្រងមួយចំនួនលើឧបករណ៍របស់អ្នក ដូចជារយៈពេល​កំណត់​ប្រចាំ​ថ្ងៃ និងពេលបិទដំណើរការ អាចប្ដូរបានតាមរយៈកូដ PIN តែប៉ុណ្ណោះ។"</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"ការគ្រប់គ្រងមួយចំនួនអាចត្រូវបានផ្លាស់ប្ដូរដោយមាតាបិតាតែប៉ុណ្ណោះ"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"បាន​ដោះសោ​ដោយភ្នាក់ងារ​​ទុកចិត្ត"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">ទុកឱ្យនៅដោះសោដោយប្រើ Extend Unlock</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"បានចាក់សោ​អេក្រង់។ បានព្យាយាមផ្ទៀងផ្ទាត់ច្រើនដងពេក។"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"បានចាក់សោអេក្រង់\nការផ្ទៀងផ្ទាត់មិនបានសម្រេច"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"បានចាក់សោដោយនាឡិការបស់អ្នក"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"ផ្កាយរណប មានការតភ្ជាប់ល្អ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"ផ្កាយរណប អាចតភ្ជាប់បាន"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"ផ្កាយរណប"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"ការប្រកាសអាសន្នតាមផ្កាយរណប"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">ការប្រកាសអាសន្នតាមផ្កាយរណបតាមរយៈ Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"សម្រាប់​ការហៅទៅ​លេខ​សង្គ្រោះបន្ទាន់ ឬ​ការប្រកាសអាសន្ន​តែប៉ុណ្ណោះ"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"បណ្ដាញផ្កាយរណប"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>។"</string>
