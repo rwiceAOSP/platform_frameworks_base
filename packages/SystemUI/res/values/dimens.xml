@@ -1108,9 +1108,9 @@
     <dimen name="global_actions_controls_y_translation">20dp</dimen>
 
     <!-- Shutdown and restart actions are larger in power options dialog -->
-    <dimen name="global_actions_power_dialog_item_height">128dp</dimen>
-    <dimen name="global_actions_power_dialog_item_width">128dp</dimen>
-    <dimen name="global_actions_power_dialog_item_bottom_margin">22dp</dimen>
+    <dimen name="global_actions_power_dialog_item_height">190dp</dimen>
+    <dimen name="global_actions_power_dialog_item_width">255dp</dimen>
+    <dimen name="global_actions_power_dialog_item_bottom_margin">45dp</dimen>
 
     <!-- Power Menu Lite -->
     <dimen name="global_actions_button_size">96dp</dimen>
@@ -1194,7 +1194,7 @@
     <dimen name="biometric_dialog_fingerprint_icon_height">100dp</dimen>
     <dimen name="biometric_dialog_button_negative_max_width">160dp</dimen>
     <dimen name="biometric_dialog_button_positive_max_width">136dp</dimen>
-    <dimen name="biometric_dialog_corner_size">28dp</dimen>
+    <dimen name="biometric_dialog_corner_size">8dp</dimen>
     <dimen name="biometric_dialog_indicator_max_width">280dp</dimen>
     <!-- Y translation when showing/dismissing the dialog-->
     <dimen name="biometric_dialog_animation_translation_offset">350dp</dimen>

@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"امنیت بیشتر لازم است. قفل دستگاه مدتی باز نشده است."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"قفل‌گشایی با چهره ممکن نیست. تلاش‌های بسیار زیاد ناموفق."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"قفل با اثرانگشت باز نمی‌شود. تلاش‌های بسیار زیاد ناموفق."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"عامل معتبر دردسترس نیست"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">«تمدید حالت باز» دردسترس نیست</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"تلاش‌های بسیار زیادی با پین اشتباه انجام شده است"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"قبلاً این پین را امتحان کرده‌اید. مورد دیگری را امتحان کنید."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"قبلاً این الگو را امتحان کرده‌اید. الگوی دیگری را امتحان کنید."</string>

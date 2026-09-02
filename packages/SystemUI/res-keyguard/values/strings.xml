@@ -217,7 +217,7 @@
     <string name="kg_fp_locked_out">Can\u2019t unlock with fingerprint. Too many attempts.</string>
 
     <!-- Message shown when Trust Agent is disabled.  [CHAR LIMIT=70] -->
-    <string name="kg_trust_agent_disabled">Trust agent is unavailable</string>
+    <string name="kg_trust_agent_disabled">Extend Unlock is unavailable</string>
 
     <!-- Message shown when primary auth is locked out after too many attempts [CHAR LIMIT=70]  -->
     <string name="kg_primary_auth_locked_out_pin">Too many attempts with incorrect PIN</string>

@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"საჭიროა დამ. უსაფრთ. მოწყობ. ერთხანს არ განიბლოკება."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"სახით განბლ. ვერ მოხ. მეტისმეტად ბევრი მცდელობა იყო."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"ანაბ. განბლ. ვერ მოხ. მეტისმეტად ბევრი მცდელობა იყო."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"ნდობის აგენტი მიუწვდომელია"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">ხანგრძლივი განბლოკვა მიუწვდომელია</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"ძალიან ბევრი მცდელობა არასწორი PIN-კოდით"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"ეს PIN-კოდი უკვე ცადეთ. ცადეთ სხვა."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"ეს ნიმუში უკვე ცადეთ. ცადეთ სხვა."</string>

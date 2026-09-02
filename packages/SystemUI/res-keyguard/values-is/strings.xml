@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Viðbótaröryggis krafist. Tækið var ekki tekið úr lás um hríð."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Ekki tókst að opna með andliti. Of margar tilraunir."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Ekki tókst að opna með fingrafari. Of margar tilraunir."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Traustfulltrúi er ekki tiltækur"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Lengri opnun er ekki í boði</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Of margar tilraunir með röngu PIN-númeri"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Búið að prófa þetta PIN-númer. Prófaðu annað."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Þú hefur þegar prófað þetta mynstur. Prófaðu annað."</string>

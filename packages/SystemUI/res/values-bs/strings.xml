@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Određene kontrole na uređaju, poput dnevnih ograničenja i prestanka rada, mogu se promijeniti samo uz PIN."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Određene kontrole može promijeniti samo roditelj"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Pouzdani agent sprečava zaključavanje"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Produženo otklj. je zadržalo otključavanje</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Ekran je zaključan. Previše pokušaja autentifikacije."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Ekran je zaključan\nAutentifikacija nije uspjela"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Zaključano je putem sata"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Satelit, dobra veza"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Satelit, veza je dostupna"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Satelit"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"Hitna pomoć putem satelita"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Hitna pomoć putem satelita na Pixelu</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Samo hitni pozivi ili pomoć"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Satelitske mreže"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"আপোনাৰ ডিভাইচত দৈনিক সীমা আৰু ডাউনটাইমৰ দৰে কিছুমান নিয়ন্ত্ৰণ কেৱল এটা পিনৰ জৰিয়তে সলনি কৰিব পাৰি।"</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"কিছুমান নিয়ন্ত্ৰণ কেৱল আপোনাৰ অভিভাৱকেহে সলনি কৰিব পাৰে"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"ভিপিএন"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgentএ আনলক কৰি ৰাখিছে"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">এক্সটেণ্ড আনলকে আনলক কৰি ৰাখিছে</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"স্ক্ৰীন লক কৰা হ’ল। অত্যধিক প্ৰমাণীকৰণৰ প্ৰয়াস।"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"স্ক্ৰীন লক হৈ আছে\nবিশ্বাসযোগ্যতা প্ৰমাণীকৰণ কৰিব পৰা নগ’ল"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"আপোনাৰ ঘড়ীটোৱে লক কৰিছে"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"উপগ্ৰহ, ভাল সংযোগ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"উপগ্ৰহ, সংযোগ উপলব্ধ"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"উপগ্ৰহ"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"উপগ্ৰহ SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel উপগ্ৰহ SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"কেৱল জৰুৰীকালীন কল বা SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"উপগ্ৰহৰ নেটৱৰ্ক"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

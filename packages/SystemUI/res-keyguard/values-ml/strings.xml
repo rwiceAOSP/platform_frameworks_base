@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"അധിക സുരക്ഷ വേണം. ഡിവൈസ് അൽപകാലം അൺലോക്ക് ചെയ്തില്ല."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"മുഖം ഉപയോഗിച്ച് അൺലോക്ക് സാധ്യമല്ല. നിരവധി ശ്രമങ്ങൾ."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"ഫിംഗർപ്രിന്റ് അൺലോക്ക് സാധ്യമല്ല. നിരവധി ശ്രമങ്ങൾ."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"വിശ്വസ്ത ഏജന്റ് ലഭ്യമല്ല"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">എക്സ്റ്റൻഡ് അൺലോക്ക് ലഭ്യമല്ല</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"തെറ്റായ പിൻ ഉപയോഗിച്ച് നിരവധി ശ്രമങ്ങൾ"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"ആ പിൻ ഇതിനകം പരീക്ഷിച്ചിട്ടുണ്ട്. മറ്റൊരെണ്ണം പരീക്ഷിച്ച് നോക്കുക."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"ആ പാറ്റേൺ ഇതിനകം പരീക്ഷിച്ചിട്ടുണ്ട്. മറ്റൊരെണ്ണം പരീക്ഷിച്ച് നോക്കുക."</string>

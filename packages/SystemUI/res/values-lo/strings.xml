@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"ການຄວບຄຸມບາງຢ່າງໃນອຸປະກອນຂອງທ່ານ ເຊັ່ນ: ຂີດຈຳກັດປະຈຳວັນ ແລະ ເວລາປິດເຮັດວຽກ, ຈະສາມາດປ່ຽນໄດ້ດ້ວຍ PIN ເທົ່ານັ້ນ."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"ການຄວບຄຸມບາງຢ່າງສາມາດຖືກປ່ຽນແປງໄດ້ໂດຍພໍ່ແມ່ຂອງທ່ານເທົ່ານັ້ນ"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"ປັອດລັອກປະໄວ້ໂດຍ TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">ສືບຕໍ່ປົດລັອກໄວ້ດ້ວຍການປົດລັອກດົນຂຶ້ນ</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"ລັອກໜ້າຈໍແລ້ວ. ພະຍາຍາມພິສູດຢືນຢັນຫຼາຍເທື່ອເກີນໄປ."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"ລັອກໜ້າຈໍແລ້ວ\nການພິສູດຢືນຢັນບໍ່ສຳເລັດ"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"ຖືກລັອກໂດຍໂມງຂອງທ່ານ"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"ດາວທຽມ, ການເຊື່ອມຕໍ່ດີ"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"ດາວທຽມ, ການເຊື່ອມຕໍ່ທີ່ພ້ອມນຳໃຊ້"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"ດາວທຽມ"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"SOS ດາວທຽມ"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">SOS ດາວທຽມຂອງ Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"ໂທ​ສຸກ​ເສີນ ຫຼື SOS ເທົ່ານັ້ນ"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"ເຄືອຂ່າຍດາວທຽມ"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

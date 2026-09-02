@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Түзмөгүңүздөгү күнүмдүк чектөө жана эскертмелерди өчүрүү мезгили сыяктуу айрым башкаруу элементтерин PIN код менен гана өзгөртүүгө болот."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Айрым башкаруу элементтерин ата-энең гана өзгөртө алат"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Ишеним агенти кулпусун ачты"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Кулпуланбаган режим иштеп жатат</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Экран кулпуланды. Өтө көп аутентификация аракети жасалды."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Экранды кулпулоо\nАутентификациядан өткөн жок"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Саатыңыз менен кулпуланды"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Спутник, байланыш жакшы"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Спутник, байланыш бар"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Спутник"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"Спутник SOS"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel спутник SOS</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Шашылыш чалуулар же SOS гана"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Спутник тармактары"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

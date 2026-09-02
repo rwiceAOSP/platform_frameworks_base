@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"נדרשת אבטחה מוגברת. המכשיר לא היה נעול לזמן מה."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"לא ניתן לפתוח בזיהוי פנים. בוצעו יותר מדי ניסיונות."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"לא ניתן לפתוח בטביעת אצבע. בוצעו יותר מדי ניסיונות."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"התכונה \'סביבה אמינה\' לא זמינה"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">‏התכונה Extend Unlock לא זמינה</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"הקלדת קוד סודי שגוי יותר מדי פעמים"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"כבר ניסית את הקוד הזה. כדאי לנסות קוד אחר."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"כבר ניסית את קו פתיחת הנעילה הזה. כדאי לנסות קו אחר."</string>

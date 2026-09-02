@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"裝置已有一段時間未鎖定，請鎖定裝置以策安全。"</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"錯誤次數過多，因此無法使用臉孔解鎖。"</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"錯誤次數過多，因此無法使用指紋解鎖。"</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"信任的代理程式無法使用"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">「延長解鎖」功能無法使用</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"輸入錯誤 PIN 碼的次數過多"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"這個 PIN 碼已試過，請試試其他 PIN 碼。"</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"這個圖案已試過，請試試其他圖案。"</string>

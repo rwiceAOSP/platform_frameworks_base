@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"વધારાની સુરક્ષા આવશ્યક છે. થોડા સમય માટે ડિવાઇસ અનલૉક થયું નથી."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"ફેસ વડે અનલૉક કરી શકાતું નથી. ઘણા બધા પ્રયાસો કર્યા."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"ફિંગરપ્રિન્ટ વડે અનલૉક કરી શકાતું નથી. ઘણા બધા પ્રયાસો કર્યા."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"ટ્રસ્ટ એજન્ટ ઉપલબ્ધ નથી"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">એક્સટેન્ડ અનલૉક ઉપલબ્ધ નથી</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"ખોટા પિન વડે ઘણા બધા પ્રયાસો કર્યા"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"તે પિન પહેલેથી અજમાવી લીધો છે. કોઈ બીજો પિન અજમાવી જુઓ."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"તે પૅટર્ન પહેલેથી અજમાવી લીધી છે. કોઈ બીજી પૅટર્ન અજમાવી જુઓ."</string>

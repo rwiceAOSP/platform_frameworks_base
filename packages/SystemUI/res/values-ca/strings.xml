@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Alguns controls del dispositiu, com ara els límits diaris i el temps d\'inactivitat, només es poden canviar amb un PIN."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Alguns controls només els pot canviar el teu pare o mare"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Desbloquejat per TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Desbloquejat per Desbloqueig ampliat</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Pantalla bloquejada. S\'han fet massa intents d\'autenticació."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Pantalla bloquejada\nHa fallat l\'autenticació"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Bloquejat pel rellotge"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Satèl·lit, bona connexió"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Satèl·lit, connexió disponible"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Satèl·lit"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"SOS per satèl·lit"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">SOS per satèl·lit de Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Només SOS o trucades d\'emergència"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Xarxes per satèl·lit"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

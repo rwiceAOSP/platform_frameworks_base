@@ -2094,7 +2094,7 @@
     <string name="legacy_vpn_name">VPN</string>
 
     <!-- Indication on the keyguard that appears when a trust agents unlocks the device. [CHAR LIMIT=40] -->
-    <string name="keyguard_indication_trust_unlocked">Kept unlocked by TrustAgent</string>
+    <string name="keyguard_indication_trust_unlocked">Kept unlocked by Extend Unlock</string>
 
     <!-- Message asking the user to authenticate with primary authentication methods (PIN/pattern/password) or biometrics after the device is locked by adaptive auth. [CHAR LIMIT=70] -->
     <string name="kg_prompt_after_adaptive_auth_lock">Screen locked. Too many authentication attempts.</string>
@@ -2381,7 +2381,7 @@
     <string name="accessibility_status_bar_satellite_symbol">Satellite</string>
 
     <!-- Text displayed indicating that the user is connected to a satellite signal. -->
-    <string name="satellite_connected_carrier_text">Satellite SOS</string>
+    <string name="satellite_connected_carrier_text">Pixel Satellite SOS</string>
     <!-- Text displayed indicating that the user might be able to use satellite SOS. -->
     <string name="satellite_emergency_only_carrier_text">Emergency calls or SOS only</string>
     <!-- Text displayed indicating current network is satellite network. -->
@@ -3330,12 +3330,12 @@
     <!-- Text help link for care instructions for overheating devices [CHAR LIMIT=40] -->
     <string name="thermal_shutdown_dialog_help_text">See care steps</string>
     <!-- URL for care instructions for overheating devices -->
-    <string name="thermal_shutdown_dialog_help_url" translatable="false"></string>
+    <string name="thermal_shutdown_dialog_help_url" translatable="false">https://support.google.com/pixelphone?p=overheat_shutdown</string>
 
     <!-- Text help link for care instructions for overheating devices [CHAR LIMIT=40] -->
     <string name="high_temp_dialog_help_text">See care steps</string>
     <!-- URL for care instructions for overheating devices -->
-    <string name="high_temp_dialog_help_url" translatable="false"></string>
+    <string name="high_temp_dialog_help_url" translatable="false">https://support.google.com/pixelphone?p=overheat_emergency</string>
 
     <!-- Title for alarm dialog alerting user the usb charger or accessorry has reached a certain temperature that should unplug the device immediately. [CHAR LIMIT=30] -->
     <string name="high_temp_alarm_title">Unplug your device</string>
@@ -3421,7 +3421,7 @@
     <string name="instant_apps_message_with_help">App opened without being installed. Tap to learn more.</string>
 
     <!-- URL of the webpage that explains instant apps. -->
-    <string name="instant_apps_help_url" translatable="false"></string>
+    <string name="instant_apps_help_url" translatable="false">https://support.google.com/googleplay/?p=instant_apps</string>
 
     <!-- Action label for launching app info on the specified app [CHAR LIMIT=20] -->
     <string name="app_info">App info</string>

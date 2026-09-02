@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"יש הגדרות במכשיר, כמו מגבלות יומיות ומשך השתקה, שאפשר לשנות רק באמצעות קוד אימות."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"רק ההורה שלך יכול לשנות הגדרות מסוימות"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"הנעילה נמנעת על ידי סביבה מהימנה"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">‏המכשיר פתוח עם Extend Unlock</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"המסך ננעל. עברת את מספר ניסיונות האימות המותר"</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"המסך ננעל\nהאימות לא הצליח"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"המכשיר ננעל על ידי השעון"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"לוויין, חיבור באיכות טובה"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"לוויין, יש חיבור זמין"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"לוויין"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"תקשורת לוויינית למצב חירום"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">‏תקשורת לוויינית למצב חירום ב-Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"רק שיחות חירום או תקשורת לוויינית למצב חירום"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"רשתות לוויין"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"‫<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

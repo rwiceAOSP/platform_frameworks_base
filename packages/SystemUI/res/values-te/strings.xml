@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"మీ డివైజ్‌లో, రోజువారీ పరిమితులు, బిజీగా ఉండే సమయం వంటి వాటికి సంబంధించిన కొన్ని కంట్రోల్స్‌ను PIN ద్వారా మాత్రమే మార్చడానికి వీలవుతుంది."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"కొన్ని కంట్రోల్స్‌ను మీ తల్లి/తండ్రి మాత్రమే మార్చగలరు"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"TrustAgent ద్వారా అన్‌లాక్ చేయబడింది"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">ఎక్స్‌టెండ్ అన్‌లాక్‌తో అన్‌లాక్‌ చేయబడింది</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"స్క్రీన్ లాక్ అయింది. చాలా ఎక్కువ ప్రామాణీకరణ ప్రయత్నాలు."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"స్క్రీన్ లాక్ అయింది\nప్రామాణీకరణ విఫలమైంది"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"మీ వాచ్ ద్వారా లాక్ చేయబడింది"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"శాటిలైట్, కనెక్షన్ బాగుంది"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"శాటిలైట్, కనెక్షన్ అందుబాటులో ఉంది"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"శాటిలైట్"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"ఎమర్జెన్సీ శాటిలైట్ సహాయం"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">Pixel ఎమర్జెన్సీ శాటిలైట్ సహాయం</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"ఎమర్జెన్సీ కాల్స్ లేదా SOS మాత్రమే"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"శాటిలైట్ నెట్‌వర్క్‌లు"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"需要锁定设备以提高安全性。设备处于未锁定状态已有一段时间了。"</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"无法使用面孔解锁。尝试次数太多。"</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"无法使用指纹解锁。尝试次数太多。"</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"可信代理已被停用"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">延长解锁已被停用</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"输错 PIN 码的尝试次数太多"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"已尝试过该密码。请换一个试试。"</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"已尝试过该解锁图案，请换一个试试。"</string>

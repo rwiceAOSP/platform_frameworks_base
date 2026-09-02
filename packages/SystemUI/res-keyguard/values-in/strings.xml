@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Perlu keamanan tambahan. Kunci perangkat tidak dibuka selama beberapa waktu."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Tidak dapat membuka kunci dengan wajah. Terlalu banyak upaya gagal."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Tidak dapat membuka kunci dengan sidik jari. Terlalu banyak upaya gagal."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Perangkat tepercaya tidak tersedia"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Extend Unlock tidak tersedia</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Terlalu banyak pemakaian PIN yang salah"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"PIN tersebut sudah dicoba. Coba yang lain."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Pola tersebut sudah dicoba. Coba yang lain."</string>

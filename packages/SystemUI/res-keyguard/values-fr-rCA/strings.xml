@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Plus de sécurité requise. Non déverr. pour un temps."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Déverr. facial impossible. Trop de tentatives."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Déverr. digital impossible. Trop de tentatives."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"L\'agent de confiance n\'est pas accessible"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Déverrouillage prolongé indisponible</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Trop de tentatives avec un NIP incorrect"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Vous avez déjà essayé ce NIP. Essayez-en un autre."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Ce schéma a déjà été essayé. Essayez-en un autre."</string>

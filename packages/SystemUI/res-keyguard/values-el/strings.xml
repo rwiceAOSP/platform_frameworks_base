@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Απαιτ. πρόσθ. ασφάλ. Η συσκ. έχει καιρό να ξεκλειδ."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Αδυναμία ξεκλ. με πρόσωπο Υπερβ. πολλές προσπάθειες."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Αδυν. ξεκ. με δακ. αποτ. Υπερβ. πολλές προσπάθειες."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Ο παράγοντας εμπιστοσύνης δεν είναι διαθέσιμος"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Η Επέκταση ξεκλειδώματος δεν είναι διαθέσιμη</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Υπερβολικά πολλές προσπάθειες με εσφαλμένο PIN"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Δοκιμάστε κάποιο άλλο διαφορετικό PIN."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Έχετε δοκιμάσει ήδη αυτό το μοτίβο. Δοκιμάστε κάποιο άλλο."</string>

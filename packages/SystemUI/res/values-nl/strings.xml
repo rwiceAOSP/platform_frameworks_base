@@ -833,7 +833,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Sommige opties op je apparaat, zoals de daglimiet en time-out, kunnen alleen worden gewijzigd met een pincode."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Sommige instellingen kunnen alleen door je ouder worden gewijzigd"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Ontgrendeld gehouden door TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Ontgrendeld gehouden door Ontgrendelen verlengen</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Scherm vergrendeld. Te veel verificatiepogingen."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Scherm vergrendeld\nVerificatie mislukt"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Vergrendeld door je smartwatch"</string>
@@ -948,7 +948,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Satelliet, goede verbinding"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Satelliet, verbinding beschikbaar"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Satelliet"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"SOS via satelliet"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">SOS via satelliet op de Pixel</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Alleen noodoproepen of SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Satellietnetwerken"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

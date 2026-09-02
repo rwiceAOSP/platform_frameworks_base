@@ -835,7 +835,7 @@
     <string name="monitoring_description_pin_protection" msgid="1983580207046670355">"Některé ovládací prvky zařízení, jako jsou denní limity a doba klidu, jde změnit jen po zadání PINu."</string>
     <string name="monitoring_description_parental_controls" msgid="4255592993669461543">"Některé ovládací prvky můžou změnit jenom rodiče"</string>
     <string name="legacy_vpn_name" msgid="4174223520162559145">"VPN"</string>
-    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">"Odemknutí udržováno funkcí TrustAgent"</string>
+    <string name="keyguard_indication_trust_unlocked" msgid="7395154975733744547">Ponecháno odemknuté pomocí rozšířeného odemknutí</string>
     <string name="kg_prompt_after_adaptive_auth_lock" msgid="6065186971000690782">"Obrazovka je zamčená. Příliš mnoho pokusů o ověření."</string>
     <string name="keyguard_indication_after_adaptive_auth_lock" msgid="5240600662061340872">"Obrazovka je zamčená\nOvěření se nezdařilo"</string>
     <string name="keyguard_indication_after_watch_disconnected" msgid="8133476870585660478">"Zamknuto hodinkami"</string>
@@ -950,7 +950,7 @@
     <string name="accessibility_status_bar_satellite_good_connection" msgid="308079391708578704">"Satelit, dobré připojení"</string>
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"Satelit, připojení je k dispozici"</string>
     <string name="accessibility_status_bar_satellite_symbol" msgid="3840194796890095832">"Satelit"</string>
-    <string name="satellite_connected_carrier_text" msgid="118524195198532589">"SOS přes satelit"</string>
+    <string name="satellite_connected_carrier_text" msgid="118524195198532589">SOS přes satelit na Pixelu</string>
     <string name="satellite_emergency_only_carrier_text" msgid="9103913890116841786">"Pouze tísňové hovory nebo SOS"</string>
     <string name="satellite_network_title_text" msgid="1483004114819442028">"Satelitní sítě"</string>
     <string name="accessibility_phone_string_format" msgid="7798841417881811812">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g>, <xliff:g id="SIGNAL_STRENGTH_DESCRIPTION">%2$s</xliff:g>."</string>

@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"ਵਾਧੂ ਸੁਰੱਖਿਆ ਦੀ ਲੋੜ ਹੈ। ਡੀਵਾਈਸ ਨੂੰ ਕੁਝ ਸਮੇਂ ਲਈ ਅਣਲਾਕ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਸੀ।"</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"ਚਿਹਰੇ ਨਾਲ ਅਣਲਾਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਬਹੁਤ ਸਾਰੀਆਂ ਕੋਸ਼ਿਸ਼ਾਂ।"</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਨਾਲ ਅਣਲਾਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਬਹੁਤ ਸਾਰੀਆਂ ਕੋਸ਼ਿਸ਼ਾਂ।"</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"ਭਰੋਸੇਯੋਗ ਏਜੰਟ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">ਐਕਸਟੈਂਡ ਅਣਲਾਕ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"ਬਹੁਤ ਵਾਰ ਗਲਤ ਪਿੰਨ ਪਾ ਦਿੱਤਾ ਹੈ"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"ਇਹ ਪਿੰਨ ਪਹਿਲਾਂ ਹੀ ਪਾ ਚੁੱਕੇ ਹੋ। ਕੋਈ ਹੋਰ ਪਾ ਕੇ ਦੇਖੋ।"</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"ਇਹ ਪੈਟਰਨ ਪਹਿਲਾਂ ਹੀ ਅਜ਼ਮਾਇਆ ਜਾ ਚੁੱਕਿਆ ਹੈ। ਕੋਈ ਹੋਰ ਵਰਤ ਕੇ ਦੇਖੋ।"</string>

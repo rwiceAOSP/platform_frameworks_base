@@ -84,7 +84,7 @@
     <string name="kg_prompt_auth_timeout" msgid="6620679830980315048">"Изисква се допъл. защита. У-вото не е отключвано скоро."</string>
     <string name="kg_face_locked_out" msgid="2751559491287575">"Не може да се отключи с лице. Твърде много опити."</string>
     <string name="kg_fp_locked_out" msgid="6228277682396768830">"Не може да се откл. с отпечатък. Твърде много опити."</string>
-    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">"Функцията за надежден агент не е налице"</string>
+    <string name="kg_trust_agent_disabled" msgid="5400691179958727891">Функцията за удължено отключване не е налице</string>
     <string name="kg_primary_auth_locked_out_pin" msgid="5492230176361601475">"Твърде много опити с грешен ПИН код"</string>
     <string name="kg_primary_auth_duplicate_guess_pin" msgid="5834891656916692329">"Вече изпробвахте този ПИН код. Опитайте с друг."</string>
     <string name="kg_primary_auth_duplicate_guess_pattern" msgid="3827593245962385968">"Вече изпробвахте тази фигура. Опитайте с друга."</string>
