@@ -6879,6 +6879,13 @@ public final class Settings {
         public static final String ADVANCED_REBOOT = "advanced_reboot";
 
         /**
+         * Whether to copy screenshots to clipboard instead of saving to storage.
+         * @hide
+         */
+        @Readable
+        public static final String SCREENSHOT_CLIPBOARD_ONLY = "screenshot_clipboard_only";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
@@ -6958,6 +6965,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(WIFI_USE_STATIC_IP);
             PRIVATE_SETTINGS.add(END_BUTTON_BEHAVIOR);
             PRIVATE_SETTINGS.add(ADVANCED_SETTINGS);
+            PRIVATE_SETTINGS.add(SCREENSHOT_CLIPBOARD_ONLY);
             PRIVATE_SETTINGS.add(ACCESSIBILITY_FORCE_INVERT_COLOR_OVERRIDE_PACKAGES_TO_DISABLE);
             PRIVATE_SETTINGS.add(ACCESSIBILITY_FORCE_INVERT_COLOR_OVERRIDE_PACKAGES_TO_ENABLE);
             PRIVATE_SETTINGS.add(WEAR_ACCESSIBILITY_GESTURE_ENABLED);

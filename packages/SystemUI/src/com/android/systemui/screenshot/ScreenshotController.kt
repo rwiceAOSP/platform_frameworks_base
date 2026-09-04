@@ -18,9 +18,12 @@ package com.android.systemui.screenshot
 import android.animation.Animator
 import android.app.ActivityOptions
 import android.content.BroadcastReceiver
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.os.PersistableBundle
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import android.graphics.Bitmap
@@ -40,10 +43,12 @@ import android.view.WindowManager.TAKE_SCREENSHOT_PROVIDED_IMAGE
 import android.widget.Toast
 import android.window.WindowContext
 import androidx.core.animation.doOnEnd
+import androidx.core.content.FileProvider
 import com.android.internal.logging.UiEventLogger
 import com.android.settingslib.applications.InterestingConfigChanges
 import com.android.systemui.broadcast.BroadcastDispatcher
 import com.android.systemui.broadcast.BroadcastSender
+import com.android.systemui.clipboardoverlay.ClipboardListener.EXTRA_SUPPRESS_OVERLAY
 import com.android.systemui.clipboardoverlay.ClipboardOverlayController
 import com.android.systemui.dagger.qualifiers.Main
 import com.android.systemui.res.R
@@ -54,6 +59,8 @@ import com.android.systemui.util.Assert
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
+import java.io.File
+import java.io.FileOutputStream
 import java.util.UUID
 import java.util.concurrent.Executor
 import java.util.concurrent.ExecutorService
@@ -218,7 +225,7 @@ internal constructor(
         window.setFocusable(true)
         viewProxy.requestFocus()
 
-        if (!screenshot.suppressLongScreenshot) {
+        if (!isClipboardOnly() && !screenshot.suppressLongScreenshot) {
             enqueueScrollCaptureRequest(requestId, screenshot.userHandle)
         }
 
@@ -507,6 +514,88 @@ internal constructor(
         finisher: Consumer<Uri?>,
         onResult: Consumer<ImageExporter.Result>,
     ) {
+        if (isClipboardOnly()) {
+            copyScreenshotToClipboard(screenshot, requestId, finisher, onResult)
+            return
+        }
+        exportToStorage(screenshot, requestId, finisher, onResult)
+    }
+
+    private fun isClipboardOnly(): Boolean {
+        return Settings.System.getIntForUser(
+            context.contentResolver,
+            Settings.System.SCREENSHOT_CLIPBOARD_ONLY,
+            0,
+            UserHandle.USER_CURRENT,
+        ) == 1
+    }
+
+    private fun copyScreenshotToClipboard(
+        screenshot: ScreenshotData,
+        requestId: UUID,
+        finisher: Consumer<Uri?>,
+        onResult: Consumer<ImageExporter.Result>,
+    ) {
+        val bitmap = screenshot.bitmap
+        if (bitmap == null) {
+            Log.e(TAG, "copyScreenshotToClipboard: Screenshot bitmap was null")
+            finisher.accept(null)
+            return
+        }
+        bgExecutor.execute {
+            try {
+                val cacheDir = File(context.cacheDir, SCREENSHOT_CACHE_DIR)
+                cacheDir.mkdirs()
+                cleanupOldCacheFiles(cacheDir)
+                val file = File(cacheDir, "screenshot_${System.currentTimeMillis()}.png")
+                FileOutputStream(file).use { out ->
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+                }
+                val uri = FileProvider.getUriForFile(context, FILE_PROVIDER_AUTHORITY, file)
+                mainExecutor.execute {
+                    val clipData = ClipData.newUri(context.contentResolver, "Screenshot", uri)
+                    clipData.description.extras =
+                        PersistableBundle().apply {
+                            putBoolean(EXTRA_SUPPRESS_OVERLAY, true)
+                        }
+                    val clipboardManager =
+                        context.createContextAsUser(screenshot.userHandle, 0)
+                            .getSystemService(ClipboardManager::class.java)
+                    clipboardManager?.setPrimaryClip(clipData)
+                    val result =
+                        ImageExporter.Result().apply {
+                            this.uri = uri
+                            this.requestId = requestId
+                            this.fileName = file.name
+                            this.timestamp = System.currentTimeMillis()
+                            this.format = Bitmap.CompressFormat.PNG
+                        }
+                    logScreenshotResultStatus(uri, screenshot.userHandle)
+                    onResult.accept(result)
+                    finisher.accept(uri)
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to copy screenshot to clipboard", e)
+                mainExecutor.execute { finisher.accept(null) }
+            }
+        }
+    }
+
+    private fun cleanupOldCacheFiles(cacheDir: File) {
+        val cutoff = System.currentTimeMillis() - 24 * 60 * 60 * 1000L
+        cacheDir.listFiles()?.forEach { file ->
+            if (file.lastModified() < cutoff) {
+                file.delete()
+            }
+        }
+    }
+
+    private fun exportToStorage(
+        screenshot: ScreenshotData,
+        requestId: UUID,
+        finisher: Consumer<Uri?>,
+        onResult: Consumer<ImageExporter.Result>,
+    ) {
         val future =
             imageExporter.export(
                 bgExecutor,
@@ -610,6 +699,9 @@ internal constructor(
 
         // From WizardManagerHelper.java
         private const val SETTINGS_SECURE_USER_SETUP_COMPLETE = "user_setup_complete"
+
+        private const val SCREENSHOT_CACHE_DIR = "screenshot"
+        private const val FILE_PROVIDER_AUTHORITY = "com.android.systemui.fileprovider"
 
         const val SCREENSHOT_CORNER_DEFAULT_TIMEOUT_MILLIS: Int = 3000
 

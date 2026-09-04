@@ -21,8 +21,11 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.UserHandle
 import android.provider.DocumentsContract
+import android.provider.Settings
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import com.android.internal.logging.UiEventLogger
 import com.android.systemui.Flags
@@ -42,7 +45,10 @@ import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import java.util.UUID
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.asExecutor
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 typealias ScrollClickCallback = ((Uri) -> Unit)
 
@@ -87,26 +93,26 @@ constructor(
     @Assisted val actionExecutor: ActionExecutor,
     @Assisted val actionsCallback: ScreenshotActionsController.ActionsCallback,
 ) : ScreenshotActionsProvider {
+    private val imageExporter = ImageExporter(context.contentResolver)
     private var addedScrollChip = false
     private var onScrollClick: ScrollClickCallback? = null
     private var pendingAction: (suspend (ScreenshotSavedResult) -> Unit)? = null
     private var result: ScreenshotSavedResult? = null
     private var webUri: Uri? = null
 
+    private val isClipboardOnly: Boolean
+        get() =
+            Settings.System.getIntForUser(
+                context.contentResolver,
+                Settings.System.SCREENSHOT_CLIPBOARD_ONLY,
+                0,
+                UserHandle.USER_CURRENT,
+            ) == 1
+
     init {
-        actionsCallback.providePreviewAction(
-            PreviewAction(context.resources.getString(R.string.screenshot_edit_description)) {
-                debugLog(LogConfig.DEBUG_ACTIONS) { "Preview tapped" }
-                uiEventLogger.log(SCREENSHOT_PREVIEW_TAPPED, 0, request.packageNameString)
-                onDeferrableActionTapped { result ->
-                    actionExecutor.startSharedTransition(
-                        actionIntentCreator.createEdit(result.uri),
-                        result.user,
-                        true,
-                    )
-                }
-            }
-        )
+        if (!isClipboardOnly) {
+            providePreviewAction()
+        }
 
         actionsCallback.provideActionButton(
             ActionButtonAppearance(
@@ -134,7 +140,22 @@ constructor(
             }
         }
 
-        if (screenCaptureRecordFeaturesInteractor.isLargeScreenScreencaptureEnabled) {
+        if (isClipboardOnly) {
+            var saveButtonId = 0
+            saveButtonId =
+                actionsCallback.provideActionButton(
+                    ActionButtonAppearance(
+                        context.getDrawable(android.R.drawable.ic_menu_save),
+                        null,
+                        context.resources.getString(R.string.screenshot_save_to_storage_label),
+                    ),
+                    showDuringEntrance = true,
+                ) {
+                    debugLog(LogConfig.DEBUG_ACTIONS) { "Save to storage tapped" }
+                    actionsCallback.updateActionButtonVisibility(saveButtonId, false)
+                    saveToStorage()
+                }
+        } else if (screenCaptureRecordFeaturesInteractor.isLargeScreenScreencaptureEnabled) {
             actionsCallback.provideActionButton(
                 ActionButtonAppearance(
                     AppCompatResources.getDrawable(context, R.drawable.ic_content_copy),
@@ -175,7 +196,8 @@ constructor(
         // Check if there is an appropriate package to open up the screenshot's directory before
         // showing the open button.
         if (
-            screenCaptureRecordFeaturesInteractor.isLargeScreenScreencaptureEnabled &&
+            !isClipboardOnly &&
+                screenCaptureRecordFeaturesInteractor.isLargeScreenScreencaptureEnabled &&
                 shouldShowOpenButton()
         ) {
             actionsCallback.provideActionButton(
@@ -200,7 +222,65 @@ constructor(
         }
     }
 
+    private fun providePreviewAction() {
+        actionsCallback.providePreviewAction(
+            PreviewAction(context.resources.getString(R.string.screenshot_edit_description)) {
+                debugLog(LogConfig.DEBUG_ACTIONS) { "Preview tapped" }
+                uiEventLogger.log(SCREENSHOT_PREVIEW_TAPPED, 0, request.packageNameString)
+                onDeferrableActionTapped { result ->
+                    actionExecutor.startSharedTransition(
+                        actionIntentCreator.createEdit(result.uri),
+                        result.user,
+                        true,
+                    )
+                }
+            }
+        )
+    }
+
+    private fun saveToStorage() {
+        val bitmap = request.bitmap ?: return
+        applicationScope.launch(Dispatchers.IO) {
+            try {
+                val future =
+                    imageExporter.export(
+                        Dispatchers.IO.asExecutor(),
+                        requestId,
+                        bitmap,
+                        request.userHandle,
+                        request.displayId,
+                        request.customSaveUri,
+                    )
+                val exportResult = future.get()
+                if (exportResult.uri != null) {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(
+                            context,
+                            R.string.screenshot_saved_title,
+                            Toast.LENGTH_SHORT,
+                        ).show()
+                        val savedResult =
+                            ScreenshotSavedResult(
+                                exportResult.uri,
+                                request.userHandle,
+                                exportResult.timestamp,
+                            )
+                        setCompletedScreenshot(savedResult)
+                        providePreviewAction()
+                    }
+                } else {
+                    Log.e(TAG, "Failed to save screenshot to storage: null uri")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to save screenshot to storage", e)
+            }
+        }
+    }
+
     override fun onScrollChipReady(onClick: ScrollClickCallback) {
+        if (isClipboardOnly) {
+            return
+        }
         onScrollClick = onClick
         if (!addedScrollChip) {
             actionsCallback.provideActionButton(
@@ -227,11 +307,11 @@ constructor(
 
     override fun setCompletedScreenshot(result: ScreenshotSavedResult) {
         if (this.result != null) {
-            Log.e(TAG, "Got a second completed screenshot for existing request!")
-            return
+            debugLog(LogConfig.DEBUG_ACTIONS) { "Replacing completed screenshot result" }
         }
         this.result = result
         pendingAction?.also { applicationScope.launch { it.invoke(result) } }
+        pendingAction = null
     }
 
     override fun onAssistContent(assistContent: AssistContent?) {
