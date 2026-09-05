@@ -4,14 +4,20 @@ import android.app.PendingIntent;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
+import com.android.systemui.res.R;
+
 /** Shared helpers for Google SystemUI power notifications. */
 public final class PowerUtils {
+
+    public static final int PULSAR_ENABLED_NOTIFICATION_ID = R.string.pulsar_enabled_notification_title;
+    public static final int PULSAR_REMINDER_NOTIFICATION_ID = R.string.pulsar_reminder_notification_title;
 
     private PowerUtils() {}
 
@@ -61,6 +67,26 @@ public final class PowerUtils {
             Log.e("PowerUtils", "isFlipendoSelected() failed", e);
             return false;
         }
+    }
+
+    public static PendingIntent createHelpArticlePendingIntentAsUser(int resId, Context context) {
+        return PendingIntent.getActivityAsUser(
+                context,
+                0,
+                new Intent(Intent.ACTION_VIEW, Uri.parse(context.getString(resId))),
+                67108864, // FLAG_IMMUTABLE | FLAG_UPDATE_CURRENT?
+                null,
+                UserHandle.CURRENT);
+    }
+
+    public static PendingIntent createBatterySettingsPendingIntentAsUser(Context context) {
+        return PendingIntent.getActivityAsUser(
+                context,
+                0,
+                new Intent(Intent.ACTION_POWER_USAGE_SUMMARY),
+                67108864,
+                null,
+                UserHandle.CURRENT);
     }
 
     /** Overrides the app name shown for the notification. */

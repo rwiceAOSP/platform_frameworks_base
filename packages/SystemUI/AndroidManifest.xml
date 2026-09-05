@@ -1353,5 +1353,14 @@
             android:exported="true"
            />
 
+        <!-- Google Battery Health Service (Pulsar) -->
+        <service
+            android:name="com.google.android.systemui.power.batteryhealth.HealthService"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.google.android.systemui.power.batteryhealth.HealthUpdateReceiver"
+            android:exported="true" />
+
     </application>
 </manifest>

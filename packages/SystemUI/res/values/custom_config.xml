@@ -6,4 +6,8 @@
 <resources>
     <!-- Whether to show the severe (Extreme Battery Saver) reminder notification. -->
     <bool name="config_show_extreme_battery_saver_reminder">true</bool>
+
+    <!-- Battery Health Assistance (Pulsar / AACP) -->
+    <bool name="config_battery_index_enabled">true</bool>
+    <bool name="config_battery_health_periodic_update_enabled">false</bool>
 </resources>
