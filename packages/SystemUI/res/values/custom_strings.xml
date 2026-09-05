@@ -28,4 +28,11 @@
     <string name="global_action_restart_download">Download</string>
     <!-- Button to restart SystemUI, within the Restart Options dialog -->
     <string name="global_action_restart_systemui">SystemUI</string>
+
+    <!-- Battery Health Assistance (Pulsar / AACP) -->
+    <string name="pulsar_enabled_notification_help_url" translatable="false">https://support.google.com/pixelphone?p=battery-health</string>
+    <string name="pulsar_enabled_notification_text">Pixel is now helping to manage your battery\'s long term health and performance. You can turn this off in Settings.</string>
+    <string name="pulsar_enabled_notification_title">Battery health assistance is on</string>
+    <string name="pulsar_reminder_notification_text">Turn on battery health assistance to help manage your battery\'s long term health and performance</string>
+    <string name="pulsar_reminder_notification_title">Battery health assistance is off</string>
 </resources>

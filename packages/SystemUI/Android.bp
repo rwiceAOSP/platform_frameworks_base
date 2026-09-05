@@ -484,6 +484,9 @@ android_library {
         true: [":DebugJavaFiles"],
         false: [":ReleaseJavaFiles"],
     }),
+    aidl: {
+        local_include_dirs: ["src"],
+    },
     defaults: ["SystemUI-srcs-defaults"],
     static_libs: [
         "//frameworks/libs/systemui:compilelib",
