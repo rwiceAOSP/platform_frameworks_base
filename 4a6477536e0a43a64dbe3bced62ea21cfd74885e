@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0893151f_8a0673dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2026-09-06T01:28:32Z",
+      "side": 1,
+      "message": "This is configured by Velvet and is enabled when user opts into Gemini. Force enabling it globally is a divergence from stock behavior",
+      "revId": "4a6477536e0a43a64dbe3bced62ea21cfd74885e",
+      "serverId": "c809e42e-2716-43b8-85a5-914f291e2dfa"
+    }
+  ]
+}
