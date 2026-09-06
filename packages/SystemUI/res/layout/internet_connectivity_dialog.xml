@@ -349,9 +349,13 @@
 
             <LinearLayout
                 android:id="@+id/wifi_scan_notify_layout"
-                style="@style/InternetDialog.Network"
                 android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/internet_dialog_network_layout_margin"
+                android:layout_marginEnd="@dimen/internet_dialog_network_layout_margin"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
                 android:paddingBottom="4dp"
                 android:clickable="false"
                 android:focusable="false"
@@ -384,8 +388,7 @@
                         android:paddingTop="16dp"
                         android:paddingBottom="8dp"
                         android:fontFamily="@*android:string/config_bodyFontFamily"
-                        android:textColor="@color/materialColorOnSurfaceVariant"
-                        android:clickable="true"/>
+                        android:textColor="@color/materialColorOnSurfaceVariant"/>
                 </LinearLayout>
             </LinearLayout>
 
